@@ -1,0 +1,20 @@
+KinSDK:
+  LABEL: KinSDK
+  PROJECT_PATH: "/Users/coreywerner/Kin/kin-appreciation-module-options-menu-ios/Pods/KinSDK.xcodeproj"
+  UUID: E0B110E1B8318CE652DD6A22F983A354
+KinUtil:
+  LABEL: KinUtil
+  PROJECT_PATH: "/Users/coreywerner/Kin/kin-appreciation-module-options-menu-ios/Pods/KinUtil.xcodeproj"
+  UUID: 14ECF12343A9CFE8DFB9CF79593E0734
+Pods-Dependencies-KinAppreciationModuleOptionsMenu:
+  LABEL: Pods-Dependencies-KinAppreciationModuleOptionsMenu
+  PROJECT_PATH: "/Users/coreywerner/Kin/kin-appreciation-module-options-menu-ios/Pods/Pods.xcodeproj"
+  UUID: 3A529F91A4D6B6D7B8FC84E491B19075
+Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp:
+  LABEL: Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp
+  PROJECT_PATH: "/Users/coreywerner/Kin/kin-appreciation-module-options-menu-ios/Pods/Pods.xcodeproj"
+  UUID: 5F67C3DF8386616E44B4095A380989B8
+Sodium:
+  LABEL: Sodium
+  PROJECT_PATH: "/Users/coreywerner/Kin/kin-appreciation-module-options-menu-ios/Pods/Sodium.xcodeproj"
+  UUID: FFB76C4584ADDB9FEE33CF479342885A

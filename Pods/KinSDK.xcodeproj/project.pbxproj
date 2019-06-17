@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0874D9C9A38529086F378EA68643CAF0 /* KinSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 207C0478D0249A766C2B4080EB234110 /* KinSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E89089CD8269C4EC05D46C3BD61C1C6 /* KinSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4EFF13ADDC302EA88A076081DFEB3D /* KinSDK-dummy.m */; };
+		22288AD1F8703B87C19CEC435327024E /* TxBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6A4DD8F3D05E476EE83DA34E2BF68E /* TxBuilder.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2F80473205B26E74FEA2231B817AE62B /* Watchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFFBC6B8D0184A4586BBA6BFEF76EE6 /* Watchers.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3397473649F71E1FC83D832B7C0421CF /* StellarResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA981B39A1C21F1D37861310CD5F6B /* StellarResults.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		35FC1BA4C1FF2A180D284965144852D2 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249C1284C59C743FD1D5F5B9106B940 /* SHA256.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		37994FD6606038DCF740372B4296D6CB /* KinClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29D9A58744F38B6DA6B933C379737F /* KinClient.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3EFF92A5D3E2F4DDD080CC836C00A681 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC32145BF4557CE19F3582B880DD9DE /* PublicKey.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		459FEC921CB9FAD13E8C570603DACCB4 /* WhitelistEnvelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FF3B34DB1C37F8BE426A0A1069BB88 /* WhitelistEnvelope.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4E3C3A68E1DB8F7C659D329B6396CDC4 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A539F0A35BEB52E55787065340A11 /* Operations.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		56197D9F6629C0D30FA0169C560DF932 /* KinAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F23C1B9FA233A1721E7515431EB1C /* KinAccounts.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		565A9FA763298A70CD69CD16D8DBAC54 /* KeyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F17D893B582DB2DE12375BC5B25CBF /* KeyUtils.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		57F667F9DB62C2F44A038B25F973B596 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07928B0C46C460D48D7CF6A299B1BC19 /* Operation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5C890692056E1285ADED9B9510562EFB /* XDRCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91B1A0F1AC70D1B0FA577798F47A8F /* XDRCodable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6C30434C23D9218F092B850EF33BA5B8 /* BCKeyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C0CED067AE6000BEC7885C4341A1E /* BCKeyUtils.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6D959263B1DBC2F28B2C262CBF49EC73 /* WrappedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B56BC900D788B22BA361CAFFE9E764 /* WrappedData.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7A4C48A9A8CFBAC09BA07FADC2E4A054 /* Data+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7774A25FD041A5C20E5D4020890555 /* Data+extensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7AA0085C497E31554734631B704715E3 /* StellarOps.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBD94EF7603482964A8CC6F24C6F4AF /* StellarOps.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7AEA72DDD76A7F6840DF9EFF76486D96 /* KinAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F99DB11A1D39707B3F6F418759431 /* KinAccount.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7B69197FF9CD729F039FCF5F896FC3FA /* StellarUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDE13ED7CCCD237B55124BDFB10EA30 /* StellarUtils.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7D6481DF507C63B24C901F41412031B9 /* StellarErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE151F6EC91ACCAF4DBD922DC7EA82D /* StellarErrors.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		86488D1D3D79D11B9125F652EB70F567 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F580D7AF70C2D19FE7502D9FE97EF /* Errors.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		987B87210DE8475EE1BF4C70C0DEE3C8 /* KinTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF3E189CE03B1629DAC0BC4322154FA /* KinTypes.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9F195957F8F145729E65AF4D9C3CD147 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1ECB06444A3D74D2DC37B2C71243924 /* Sodium.framework */; };
+		A00DCC33CC3DF4E94CD6FFAD5FBD5F71 /* KinError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BA12383070582837064105709CCEB /* KinError.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A6B745FE4FD2C0FAE343D894E617CF54 /* StellarEventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F1CEEFCC495AD072274B1835F7AEDB /* StellarEventSource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A996B2D667900E527C427E3DCC47A1B5 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4368AEAE3A7FB410F3714FEED9BF9D5D /* Endpoint.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AA5E4694ECF54EC91210F2954CD58420 /* Ledger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9294B9CD38519724764194D86D0AEE /* Ledger.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		ACDAF44AB3FBFF3DE79ADC9CC72032BE /* Bundle+Kin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AD5BDA0D1292174A3C52DFB4DD0F8E /* Bundle+Kin.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AF853AB0C2F894EB327B73F7814B122E /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E45831ED25E728625E4C81A79CBC926 /* Version.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B35945B42BD14217EC2B17701120BA6A /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC14E6C5730AD592689EB973F934D0F1 /* Asset.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B71842E9BE27BA4C057C3EFA80D3F771 /* Watches.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0213A5F3D3CEEE5EF51273D583414 /* Watches.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BCDDB17054AE66ED32AF7A7CE1D572C0 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288BDA3642445B0798FFE69B758C7AE /* KeychainSwiftAccessOptions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BF6990612354C5920628CB179441DB01 /* KinUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700E259452EF132645B47361A3EB8F98 /* KinUtil.framework */; };
+		C90F8013CC36E6F662E441E5AACA37D3 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8657631DAEEB9A799980EDBBD14660A /* Transaction.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DCB3191A4616EB1B7466318432C1E133 /* Stellar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275D8C95143353313514B4DEE51CFCD4 /* Stellar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F047E4AFCB035F97166A0D43FFB150C9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE3F0C9E4C3DC41C917CB9F75E09CB /* Network.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F05E0BF53DF9E43FD826C80085136FBF /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A15C025CAEB76949DFFC191A1FF86D /* KeychainSwift.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F11315AC9E774193D04C1442A3E3E595 /* HorizonResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA54D4BE7F1412907978ECCC3BD397 /* HorizonResponses.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FB43193C03C80A24B0B719A2F9C3B377 /* KeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9BF3ECEFB62A4BB2CC867663C244F /* KeyStore.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FD1AD91D82FC2C91AAC3C0AFD05718EF /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34933A8C02CB87850E881E86EF43CBF1 /* TegKeychainConstants.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FE850318FAAF820E331FE82607FD5CEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E18F6980B82509DA8B71E6A4E192D51 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57C87AA8501FCB4402B13DB101B5384F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E447EB7A5841E7C920644C13BCA7F24 /* Sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FFB76C4584ADDB9FEE33CF479342885A;
+			remoteInfo = Sodium;
+		};
+		6A6FCF4283B12368744934A2FF392A70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4519799B365C937F326808166D8E271 /* KinUtil.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 14ECF12343A9CFE8DFB9CF79593E0734;
+			remoteInfo = KinUtil;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E8EE725C78FD671A4A415657BDD651 /* KinSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KinSDK.modulemap; sourceTree = "<group>"; };
+		042A539F0A35BEB52E55787065340A11 /* Operations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operations.swift; path = KinSDK/KinSDK/Core/blockchain/types/Operations.swift; sourceTree = "<group>"; };
+		07928B0C46C460D48D7CF6A299B1BC19 /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operation.swift; path = KinSDK/KinSDK/Core/blockchain/types/Operation.swift; sourceTree = "<group>"; };
+		19A15C025CAEB76949DFFC191A1FF86D /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = "KinSDK/KinSDK/ThirdParty/keychain-swift/KeychainSwift/KeychainSwift.swift"; sourceTree = "<group>"; };
+		1A91B1A0F1AC70D1B0FA577798F47A8F /* XDRCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XDRCodable.swift; path = KinSDK/KinSDK/Core/blockchain/XDRCodable/XDRCodable.swift; sourceTree = "<group>"; };
+		207C0478D0249A766C2B4080EB234110 /* KinSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KinSDK-umbrella.h"; sourceTree = "<group>"; };
+		23986F7BE810C1E7901E7BA9F1C27C0F /* KinSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KinSDK-prefix.pch"; sourceTree = "<group>"; };
+		275D8C95143353313514B4DEE51CFCD4 /* Stellar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stellar.swift; path = KinSDK/KinSDK/Core/blockchain/Stellar.swift; sourceTree = "<group>"; };
+		31EA981B39A1C21F1D37861310CD5F6B /* StellarResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StellarResults.swift; path = KinSDK/KinSDK/Core/blockchain/StellarResults.swift; sourceTree = "<group>"; };
+		34933A8C02CB87850E881E86EF43CBF1 /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = "KinSDK/KinSDK/ThirdParty/keychain-swift/KeychainSwift/TegKeychainConstants.swift"; sourceTree = "<group>"; };
+		34BEA64192C0AD1F038DA10D10AC9214 /* KinSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KinSDK-Info.plist"; sourceTree = "<group>"; };
+		3F1BA12383070582837064105709CCEB /* KinError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KinError.swift; path = KinSDK/KinSDK/Core/KinError.swift; sourceTree = "<group>"; };
+		4368AEAE3A7FB410F3714FEED9BF9D5D /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = KinSDK/KinSDK/Core/blockchain/Endpoint.swift; sourceTree = "<group>"; };
+		49DA54D4BE7F1412907978ECCC3BD397 /* HorizonResponses.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizonResponses.swift; path = KinSDK/KinSDK/Core/blockchain/HorizonResponses.swift; sourceTree = "<group>"; };
+		4DF3E189CE03B1629DAC0BC4322154FA /* KinTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KinTypes.swift; path = KinSDK/KinSDK/Core/KinTypes.swift; sourceTree = "<group>"; };
+		4E18F6980B82509DA8B71E6A4E192D51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4F9294B9CD38519724764194D86D0AEE /* Ledger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ledger.swift; path = KinSDK/KinSDK/Core/blockchain/types/Ledger.swift; sourceTree = "<group>"; };
+		51AD5BDA0D1292174A3C52DFB4DD0F8E /* Bundle+Kin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Kin.swift"; path = "KinSDK/KinSDK/Core/Utilities/Bundle+Kin.swift"; sourceTree = "<group>"; };
+		5E447EB7A5841E7C920644C13BCA7F24 /* Sodium */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sodium; path = Sodium.xcodeproj; sourceTree = "<group>"; };
+		5E45831ED25E728625E4C81A79CBC926 /* Version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Version.swift; path = KinSDK/KinSDK/Core/Utilities/Version.swift; sourceTree = "<group>"; };
+		64FF3B34DB1C37F8BE426A0A1069BB88 /* WhitelistEnvelope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhitelistEnvelope.swift; path = KinSDK/KinSDK/Core/WhitelistEnvelope.swift; sourceTree = "<group>"; };
+		692F5724F63B8E90EEE06043B152DDD2 /* KinSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KinSDK.xcconfig; sourceTree = "<group>"; };
+		6EFFBC6B8D0184A4586BBA6BFEF76EE6 /* Watchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Watchers.swift; path = KinSDK/KinSDK/Core/Watchers.swift; sourceTree = "<group>"; };
+		700E259452EF132645B47361A3EB8F98 /* KinUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KinUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1F23C1B9FA233A1721E7515431EB1C /* KinAccounts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KinAccounts.swift; path = KinSDK/KinSDK/Core/KinAccounts.swift; sourceTree = "<group>"; };
+		7F6A4DD8F3D05E476EE83DA34E2BF68E /* TxBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TxBuilder.swift; path = KinSDK/KinSDK/Core/blockchain/TxBuilder.swift; sourceTree = "<group>"; };
+		8288BDA3642445B0798FFE69B758C7AE /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = "KinSDK/KinSDK/ThirdParty/keychain-swift/KeychainSwift/KeychainSwiftAccessOptions.swift"; sourceTree = "<group>"; };
+		847F99DB11A1D39707B3F6F418759431 /* KinAccount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KinAccount.swift; path = KinSDK/KinSDK/Core/KinAccount.swift; sourceTree = "<group>"; };
+		87B56BC900D788B22BA361CAFFE9E764 /* WrappedData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WrappedData.swift; path = KinSDK/KinSDK/Core/blockchain/types/WrappedData.swift; sourceTree = "<group>"; };
+		AB29D9A58744F38B6DA6B933C379737F /* KinClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KinClient.swift; path = KinSDK/KinSDK/Core/KinClient.swift; sourceTree = "<group>"; };
+		ACC32145BF4557CE19F3582B880DD9DE /* PublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublicKey.swift; path = KinSDK/KinSDK/Core/blockchain/types/PublicKey.swift; sourceTree = "<group>"; };
+		BC4EFF13ADDC302EA88A076081DFEB3D /* KinSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KinSDK-dummy.m"; sourceTree = "<group>"; };
+		BE7774A25FD041A5C20E5D4020890555 /* Data+extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+extensions.swift"; path = "KinSDK/KinSDK/Core/blockchain/Data+extensions.swift"; sourceTree = "<group>"; };
+		C0F1CEEFCC495AD072274B1835F7AEDB /* StellarEventSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StellarEventSource.swift; path = KinSDK/KinSDK/Core/blockchain/StellarEventSource.swift; sourceTree = "<group>"; };
+		C63C10A0DC944B90F84A8AC282DC3D8C /* KinSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KinSDK.framework; path = KinSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE151F6EC91ACCAF4DBD922DC7EA82D /* StellarErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StellarErrors.swift; path = KinSDK/KinSDK/Core/blockchain/StellarErrors.swift; sourceTree = "<group>"; };
+		D4519799B365C937F326808166D8E271 /* KinUtil */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KinUtil; path = KinUtil.xcodeproj; sourceTree = "<group>"; };
+		D5F17D893B582DB2DE12375BC5B25CBF /* KeyUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyUtils.swift; path = KinSDK/KinSDK/Core/KeyUtils.swift; sourceTree = "<group>"; };
+		D95C0CED067AE6000BEC7885C4341A1E /* BCKeyUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BCKeyUtils.swift; path = KinSDK/KinSDK/Core/blockchain/BCKeyUtils.swift; sourceTree = "<group>"; };
+		DFDE13ED7CCCD237B55124BDFB10EA30 /* StellarUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StellarUtils.swift; path = KinSDK/KinSDK/Core/blockchain/StellarUtils.swift; sourceTree = "<group>"; };
+		E1ECB06444A3D74D2DC37B2C71243924 /* Sodium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sodium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5B9BF3ECEFB62A4BB2CC867663C244F /* KeyStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyStore.swift; path = KinSDK/KinSDK/Core/KeyStore.swift; sourceTree = "<group>"; };
+		E71F580D7AF70C2D19FE7502D9FE97EF /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = KinSDK/KinSDK/Core/blockchain/Errors.swift; sourceTree = "<group>"; };
+		EEFE3F0C9E4C3DC41C917CB9F75E09CB /* Network.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Network.swift; path = KinSDK/KinSDK/Core/Network.swift; sourceTree = "<group>"; };
+		F249C1284C59C743FD1D5F5B9106B940 /* SHA256.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA256.swift; path = KinSDK/KinSDK/ThirdParty/SHA256.swift; sourceTree = "<group>"; };
+		F8657631DAEEB9A799980EDBBD14660A /* Transaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = KinSDK/KinSDK/Core/blockchain/types/Transaction.swift; sourceTree = "<group>"; };
+		FC14E6C5730AD592689EB973F934D0F1 /* Asset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Asset.swift; path = KinSDK/KinSDK/Core/blockchain/types/Asset.swift; sourceTree = "<group>"; };
+		FDBD94EF7603482964A8CC6F24C6F4AF /* StellarOps.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StellarOps.swift; path = KinSDK/KinSDK/Core/blockchain/StellarOps.swift; sourceTree = "<group>"; };
+		FFD0213A5F3D3CEEE5EF51273D583414 /* Watches.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Watches.swift; path = KinSDK/KinSDK/Core/blockchain/Watches.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E91093E908265A1099960BF410C2771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE850318FAAF820E331FE82607FD5CEF /* Foundation.framework in Frameworks */,
+				BF6990612354C5920628CB179441DB01 /* KinUtil.framework in Frameworks */,
+				9F195957F8F145729E65AF4D9C3CD147 /* Sodium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E2B1763FB196C6FC5FF075CAA0C4B81 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		41685E8592E60D864AA064BE2F0487AF /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				D4519799B365C937F326808166D8E271 /* KinUtil */,
+				5E447EB7A5841E7C920644C13BCA7F24 /* Sodium */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		5E482051D1D2DC771CD0D62BD273149C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E8EE725C78FD671A4A415657BDD651 /* KinSDK.modulemap */,
+				692F5724F63B8E90EEE06043B152DDD2 /* KinSDK.xcconfig */,
+				BC4EFF13ADDC302EA88A076081DFEB3D /* KinSDK-dummy.m */,
+				34BEA64192C0AD1F038DA10D10AC9214 /* KinSDK-Info.plist */,
+				23986F7BE810C1E7901E7BA9F1C27C0F /* KinSDK-prefix.pch */,
+				207C0478D0249A766C2B4080EB234110 /* KinSDK-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KinSDK";
+			sourceTree = "<group>";
+		};
+		66A3DA9C1E962A6C68256EE4396209AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				700E259452EF132645B47361A3EB8F98 /* KinUtil.framework */,
+				E1ECB06444A3D74D2DC37B2C71243924 /* Sodium.framework */,
+				8CF0470E9D46FA0E821F0A55A46FB7F7 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8685731FA6D6094F920CB1563339CB2B /* KinSDK */ = {
+			isa = PBXGroup;
+			children = (
+				FC14E6C5730AD592689EB973F934D0F1 /* Asset.swift */,
+				D95C0CED067AE6000BEC7885C4341A1E /* BCKeyUtils.swift */,
+				51AD5BDA0D1292174A3C52DFB4DD0F8E /* Bundle+Kin.swift */,
+				BE7774A25FD041A5C20E5D4020890555 /* Data+extensions.swift */,
+				4368AEAE3A7FB410F3714FEED9BF9D5D /* Endpoint.swift */,
+				E71F580D7AF70C2D19FE7502D9FE97EF /* Errors.swift */,
+				49DA54D4BE7F1412907978ECCC3BD397 /* HorizonResponses.swift */,
+				19A15C025CAEB76949DFFC191A1FF86D /* KeychainSwift.swift */,
+				8288BDA3642445B0798FFE69B758C7AE /* KeychainSwiftAccessOptions.swift */,
+				E5B9BF3ECEFB62A4BB2CC867663C244F /* KeyStore.swift */,
+				D5F17D893B582DB2DE12375BC5B25CBF /* KeyUtils.swift */,
+				847F99DB11A1D39707B3F6F418759431 /* KinAccount.swift */,
+				7F1F23C1B9FA233A1721E7515431EB1C /* KinAccounts.swift */,
+				AB29D9A58744F38B6DA6B933C379737F /* KinClient.swift */,
+				3F1BA12383070582837064105709CCEB /* KinError.swift */,
+				4DF3E189CE03B1629DAC0BC4322154FA /* KinTypes.swift */,
+				4F9294B9CD38519724764194D86D0AEE /* Ledger.swift */,
+				EEFE3F0C9E4C3DC41C917CB9F75E09CB /* Network.swift */,
+				07928B0C46C460D48D7CF6A299B1BC19 /* Operation.swift */,
+				042A539F0A35BEB52E55787065340A11 /* Operations.swift */,
+				ACC32145BF4557CE19F3582B880DD9DE /* PublicKey.swift */,
+				F249C1284C59C743FD1D5F5B9106B940 /* SHA256.swift */,
+				275D8C95143353313514B4DEE51CFCD4 /* Stellar.swift */,
+				CEE151F6EC91ACCAF4DBD922DC7EA82D /* StellarErrors.swift */,
+				C0F1CEEFCC495AD072274B1835F7AEDB /* StellarEventSource.swift */,
+				FDBD94EF7603482964A8CC6F24C6F4AF /* StellarOps.swift */,
+				31EA981B39A1C21F1D37861310CD5F6B /* StellarResults.swift */,
+				DFDE13ED7CCCD237B55124BDFB10EA30 /* StellarUtils.swift */,
+				34933A8C02CB87850E881E86EF43CBF1 /* TegKeychainConstants.swift */,
+				F8657631DAEEB9A799980EDBBD14660A /* Transaction.swift */,
+				7F6A4DD8F3D05E476EE83DA34E2BF68E /* TxBuilder.swift */,
+				5E45831ED25E728625E4C81A79CBC926 /* Version.swift */,
+				6EFFBC6B8D0184A4586BBA6BFEF76EE6 /* Watchers.swift */,
+				FFD0213A5F3D3CEEE5EF51273D583414 /* Watches.swift */,
+				64FF3B34DB1C37F8BE426A0A1069BB88 /* WhitelistEnvelope.swift */,
+				87B56BC900D788B22BA361CAFFE9E764 /* WrappedData.swift */,
+				1A91B1A0F1AC70D1B0FA577798F47A8F /* XDRCodable.swift */,
+				2E2B1763FB196C6FC5FF075CAA0C4B81 /* Core */,
+				5E482051D1D2DC771CD0D62BD273149C /* Support Files */,
+			);
+			name = KinSDK;
+			path = KinSDK;
+			sourceTree = "<group>";
+		};
+		889E31CA80CE7363B76FD3CCF0A22801 = {
+			isa = PBXGroup;
+			children = (
+				41685E8592E60D864AA064BE2F0487AF /* Dependencies */,
+				66A3DA9C1E962A6C68256EE4396209AF /* Frameworks */,
+				8685731FA6D6094F920CB1563339CB2B /* KinSDK */,
+				8F9F53603E715A0DED88EFCF5525F739 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CF0470E9D46FA0E821F0A55A46FB7F7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E18F6980B82509DA8B71E6A4E192D51 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8F9F53603E715A0DED88EFCF5525F739 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C63C10A0DC944B90F84A8AC282DC3D8C /* KinSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3DA399B80FCD084B440A1D64D50D1117 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0874D9C9A38529086F378EA68643CAF0 /* KinSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E0B110E1B8318CE652DD6A22F983A354 /* KinSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C40F13F1C39F038CC2874C3FC9B13734 /* Build configuration list for PBXNativeTarget "KinSDK" */;
+			buildPhases = (
+				3DA399B80FCD084B440A1D64D50D1117 /* Headers */,
+				8FFE2E78BF74457A2A14A788F9858E4D /* Sources */,
+				9E91093E908265A1099960BF410C2771 /* Frameworks */,
+				CE54C6B9AADEB723C069763099DA6A8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0416F74E92F4F6CA9AE06E23726CF3CB /* PBXTargetDependency */,
+				CEC0359AC2ECED7FBDB4FFEA5CCBBB93 /* PBXTargetDependency */,
+			);
+			name = KinSDK;
+			productName = KinSDK;
+			productReference = C63C10A0DC944B90F84A8AC282DC3D8C /* KinSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6F22FCD57307156D8687C591B3A0897 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 0326EFC147EE11B83BD61A31EB4CAE88 /* Build configuration list for PBXProject "KinSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 889E31CA80CE7363B76FD3CCF0A22801;
+			productRefGroup = 8F9F53603E715A0DED88EFCF5525F739 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProjectRef = D4519799B365C937F326808166D8E271 /* KinUtil */;
+				},
+				{
+					ProjectRef = 5E447EB7A5841E7C920644C13BCA7F24 /* Sodium */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E0B110E1B8318CE652DD6A22F983A354 /* KinSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE54C6B9AADEB723C069763099DA6A8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FFE2E78BF74457A2A14A788F9858E4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35945B42BD14217EC2B17701120BA6A /* Asset.swift in Sources */,
+				6C30434C23D9218F092B850EF33BA5B8 /* BCKeyUtils.swift in Sources */,
+				ACDAF44AB3FBFF3DE79ADC9CC72032BE /* Bundle+Kin.swift in Sources */,
+				7A4C48A9A8CFBAC09BA07FADC2E4A054 /* Data+extensions.swift in Sources */,
+				A996B2D667900E527C427E3DCC47A1B5 /* Endpoint.swift in Sources */,
+				86488D1D3D79D11B9125F652EB70F567 /* Errors.swift in Sources */,
+				F11315AC9E774193D04C1442A3E3E595 /* HorizonResponses.swift in Sources */,
+				F05E0BF53DF9E43FD826C80085136FBF /* KeychainSwift.swift in Sources */,
+				BCDDB17054AE66ED32AF7A7CE1D572C0 /* KeychainSwiftAccessOptions.swift in Sources */,
+				FB43193C03C80A24B0B719A2F9C3B377 /* KeyStore.swift in Sources */,
+				565A9FA763298A70CD69CD16D8DBAC54 /* KeyUtils.swift in Sources */,
+				7AEA72DDD76A7F6840DF9EFF76486D96 /* KinAccount.swift in Sources */,
+				56197D9F6629C0D30FA0169C560DF932 /* KinAccounts.swift in Sources */,
+				37994FD6606038DCF740372B4296D6CB /* KinClient.swift in Sources */,
+				A00DCC33CC3DF4E94CD6FFAD5FBD5F71 /* KinError.swift in Sources */,
+				1E89089CD8269C4EC05D46C3BD61C1C6 /* KinSDK-dummy.m in Sources */,
+				987B87210DE8475EE1BF4C70C0DEE3C8 /* KinTypes.swift in Sources */,
+				AA5E4694ECF54EC91210F2954CD58420 /* Ledger.swift in Sources */,
+				F047E4AFCB035F97166A0D43FFB150C9 /* Network.swift in Sources */,
+				57F667F9DB62C2F44A038B25F973B596 /* Operation.swift in Sources */,
+				4E3C3A68E1DB8F7C659D329B6396CDC4 /* Operations.swift in Sources */,
+				3EFF92A5D3E2F4DDD080CC836C00A681 /* PublicKey.swift in Sources */,
+				35FC1BA4C1FF2A180D284965144852D2 /* SHA256.swift in Sources */,
+				DCB3191A4616EB1B7466318432C1E133 /* Stellar.swift in Sources */,
+				7D6481DF507C63B24C901F41412031B9 /* StellarErrors.swift in Sources */,
+				A6B745FE4FD2C0FAE343D894E617CF54 /* StellarEventSource.swift in Sources */,
+				7AA0085C497E31554734631B704715E3 /* StellarOps.swift in Sources */,
+				3397473649F71E1FC83D832B7C0421CF /* StellarResults.swift in Sources */,
+				7B69197FF9CD729F039FCF5F896FC3FA /* StellarUtils.swift in Sources */,
+				FD1AD91D82FC2C91AAC3C0AFD05718EF /* TegKeychainConstants.swift in Sources */,
+				C90F8013CC36E6F662E441E5AACA37D3 /* Transaction.swift in Sources */,
+				22288AD1F8703B87C19CEC435327024E /* TxBuilder.swift in Sources */,
+				AF853AB0C2F894EB327B73F7814B122E /* Version.swift in Sources */,
+				2F80473205B26E74FEA2231B817AE62B /* Watchers.swift in Sources */,
+				B71842E9BE27BA4C057C3EFA80D3F771 /* Watches.swift in Sources */,
+				459FEC921CB9FAD13E8C570603DACCB4 /* WhitelistEnvelope.swift in Sources */,
+				6D959263B1DBC2F28B2C262CBF49EC73 /* WrappedData.swift in Sources */,
+				5C890692056E1285ADED9B9510562EFB /* XDRCodable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0416F74E92F4F6CA9AE06E23726CF3CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KinUtil;
+			targetProxy = 6A6FCF4283B12368744934A2FF392A70 /* PBXContainerItemProxy */;
+		};
+		CEC0359AC2ECED7FBDB4FFEA5CCBBB93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sodium;
+			targetProxy = 57C87AA8501FCB4402B13DB101B5384F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5C1B93F931FDB7070F0BFD841DDCE8BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9A9FE2518F859D3E9FB324AAE6A5133D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		ABC72A71099F3A9FD92E28BF4B032AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 692F5724F63B8E90EEE06043B152DDD2 /* KinSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KinSDK/KinSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KinSDK/KinSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KinSDK/KinSDK.modulemap";
+				PRODUCT_MODULE_NAME = KinSDK;
+				PRODUCT_NAME = KinSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D6FA2CEDFC486B64D52DFE0F5320FFE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 692F5724F63B8E90EEE06043B152DDD2 /* KinSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KinSDK/KinSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KinSDK/KinSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KinSDK/KinSDK.modulemap";
+				PRODUCT_MODULE_NAME = KinSDK;
+				PRODUCT_NAME = KinSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0326EFC147EE11B83BD61A31EB4CAE88 /* Build configuration list for PBXProject "KinSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9FE2518F859D3E9FB324AAE6A5133D /* Debug */,
+				5C1B93F931FDB7070F0BFD841DDCE8BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C40F13F1C39F038CC2874C3FC9B13734 /* Build configuration list for PBXNativeTarget "KinSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC72A71099F3A9FD92E28BF4B032AA2 /* Debug */,
+				D6FA2CEDFC486B64D52DFE0F5320FFE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6F22FCD57307156D8687C591B3A0897 /* Project object */;
+}

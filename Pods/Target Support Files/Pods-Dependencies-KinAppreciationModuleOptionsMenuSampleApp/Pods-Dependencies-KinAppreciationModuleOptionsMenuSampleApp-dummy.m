@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp : NSObject
+@end
+@implementation PodsDummy_Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp
+@end

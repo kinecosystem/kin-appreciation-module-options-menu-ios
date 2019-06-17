@@ -1,0 +1,28 @@
+PODS:
+  - KinSDK (1.0.2):
+    - KinSDK/Core (= 1.0.2)
+    - KinUtil (= 0.1.0)
+    - Sodium (= 0.8.0)
+  - KinSDK/Core (1.0.2):
+    - KinUtil (= 0.1.0)
+    - Sodium (= 0.8.0)
+  - KinUtil (0.1.0)
+  - Sodium (0.8.0)
+
+DEPENDENCIES:
+  - KinSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KinSDK
+    - KinUtil
+    - Sodium
+
+SPEC CHECKSUMS:
+  KinSDK: 5dfcf8353ceface126e3bb6912a1634677d83bea
+  KinUtil: 5ba64858ba2f24156d6e229c963b37f8d808bd4c
+  Sodium: 63c0ca312a932e6da481689537d4b35568841bdc
+
+PODFILE CHECKSUM: b9c1db0e0f4667c47bf16326f227dd111859889b
+
+COCOAPODS: 1.7.1
