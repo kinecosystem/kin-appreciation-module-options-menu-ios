@@ -8,16 +8,13 @@ platform :ios, '9.0'
 workspace 'KinAppreciationModuleOptionsMenu'
 
 abstract_target 'Dependencies' do
-  pod 'KinSDK'
+  pod 'KinSDK', '~> 1.0.0'
 
   target 'KinAppreciationModuleOptionsMenu' do
     project 'KinAppreciationModuleOptionsMenu/KinAppreciationModuleOptionsMenu.xcodeproj'
+    target 'KinAppreciationModuleOptionsMenuTests'
   end
 
-  # target 'KinSDKTests' do
-  #   project 'KinSDK/KinSDK.xcodeproj'
-  # end
-  
   target 'KinAppreciationModuleOptionsMenuSampleApp' do
     project 'KinAppreciationModuleOptionsMenuSampleApp/KinAppreciationModuleOptionsMenuSampleApp.xcodeproj'
   end

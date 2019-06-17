@@ -19,16 +19,14 @@ Pod::Spec.new do |s|
 
   s.dependency 'KinSDK', '~> 1.0.0'
 
-  # ss.test_spec 'Tests' do |sts|
-  #   sts.requires_app_host = true
-  #   sts.source_files      = 'KinSDK/KinSDKTests/Core/*.swift'
-  # end
+  s.test_spec 'Tests' do |ts|
+    ts.source_files = 'KinAppreciationModuleOptionsMenu/KinAppreciationModuleOptionsMenuTests/*.swift'
+  end
 
-  # ss.app_spec 'SampleApp' do |sas|
-  #   root = 'SampleApps/KinSDKSampleApp/KinSDKSampleApp'
+  s.app_spec 'SampleApp' do |as|
+    root = 'KinAppreciationModuleOptionsMenuSampleApp/KinAppreciationModuleOptionsMenuSampleApp'
 
-  #   sas.pod_target_xcconfig = { 'INFOPLIST_FILE' => '${PODS_TARGET_SRCROOT}/'+root+'/Info.plist' }
-  #   sas.source_files        = root+'/**/*.{strings,swift}'
-  #   sas.resources           = root+'/**/*.{storyboard,xcassets}'
-  # end
+    as.source_files = root+'/**/*.{strings,swift}'
+    as.resources    = root+'/**/*.{storyboard,xcassets}'
+  end
 end
