@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D8A2B6EB88BCA0CAC0C2A03 /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2C6AD1D69664027332E7AC /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework */; };
+		4043D2A9BBE2262F1CE4881C /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F046BCD8759DFBF90525BD05 /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework */; };
 		68AF952122B79B4C008C01EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF952022B79B4C008C01EC /* AppDelegate.swift */; };
 		68AF952322B79B4C008C01EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF952222B79B4C008C01EC /* ViewController.swift */; };
 		68AF952622B79B4C008C01EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AF952422B79B4C008C01EC /* Main.storyboard */; };
@@ -16,6 +16,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AC55A4FC5B9E0CF3DC99034 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		0D7737BD6BF63E132A70096B /* Pods-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenuSampleApp/Pods-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		36BC6DA688E7AE167191EC5A /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5990C6ADF9334B87E2FF7584 /* Pods-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenuSampleApp/Pods-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		68AF951D22B79B4C008C01EC /* KinAppreciationModuleOptionsMenuSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinAppreciationModuleOptionsMenuSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AF952022B79B4C008C01EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68AF952222B79B4C008C01EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +29,7 @@
 		68AF952C22B79B4F008C01EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E0EF86BEBA21C6326CA573D /* Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		83EA3C2CCC6D2387DBE97F19 /* Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		DF2C6AD1D69664027332E7AC /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F046BCD8759DFBF90525BD05 /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D8A2B6EB88BCA0CAC0C2A03 /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework in Frameworks */,
+				4043D2A9BBE2262F1CE4881C /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +47,7 @@
 		4808EF81167C16E735769FCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF2C6AD1D69664027332E7AC /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework */,
+				F046BCD8759DFBF90525BD05 /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,6 +88,10 @@
 			children = (
 				83EA3C2CCC6D2387DBE97F19 /* Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig */,
 				7E0EF86BEBA21C6326CA573D /* Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig */,
+				36BC6DA688E7AE167191EC5A /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig */,
+				0AC55A4FC5B9E0CF3DC99034 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig */,
+				5990C6ADF9334B87E2FF7584 /* Pods-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig */,
+				0D7737BD6BF63E132A70096B /* Pods-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -100,7 +108,7 @@
 				68AF951922B79B4C008C01EC /* Sources */,
 				68AF951A22B79B4C008C01EC /* Frameworks */,
 				68AF951B22B79B4C008C01EC /* Resources */,
-				4FECC0CE3ACB667769DD085B /* [CP] Embed Pods Frameworks */,
+				ABAC92195AC8794F1A748FD9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,7 +166,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4FECC0CE3ACB667769DD085B /* [CP] Embed Pods Frameworks */ = {
+		ABAC92195AC8794F1A748FD9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
