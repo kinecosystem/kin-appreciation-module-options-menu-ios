@@ -23,6 +23,7 @@
 		68AF960822BA61F3008C01EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68AF960722BA61F3008C01EC /* Assets.xcassets */; };
 		68AF960C22BB5F9B008C01EC /* KinAmountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960B22BB5F9B008C01EC /* KinAmountButton.swift */; };
 		68AF960E22BB792D008C01EC /* KinAppreciationBI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960D22BB792D008C01EC /* KinAppreciationBI.swift */; };
+		68AF961022BB852A008C01EC /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960F22BB852A008C01EC /* ConfettiView.swift */; };
 		74C3D23CC74FEBCB013E7063 /* Pods_KinAppreciationModuleOptionsMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DAA20284ABEDB90DB87708 /* Pods_KinAppreciationModuleOptionsMenu.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		68AF960722BA61F3008C01EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68AF960B22BB5F9B008C01EC /* KinAmountButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KinAmountButton.swift; sourceTree = "<group>"; };
 		68AF960D22BB792D008C01EC /* KinAppreciationBI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinAppreciationBI.swift; sourceTree = "<group>"; };
+		68AF960F22BB852A008C01EC /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
 		9217BCEB3C3B04E724DCB930 /* Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
 		F48CB93AFE6AAAE78B0CCDC6 /* Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu/Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		FAB019A4DF19CF1102A28507 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu/Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				68AF960222BA40A0008C01EC /* Extensions */,
 				68AF95FA22BA1CC4008C01EC /* AnimatedTransitioning.swift */,
 				68AF95F622B9E1EB008C01EC /* Appearance.swift */,
+				68AF960F22BB852A008C01EC /* ConfettiView.swift */,
 				68AF94FE22B79AED008C01EC /* Info.plist */,
 				68AF960B22BB5F9B008C01EC /* KinAmountButton.swift */,
 				68AF960D22BB792D008C01EC /* KinAppreciationBI.swift */,
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68AF961022BB852A008C01EC /* ConfettiView.swift in Sources */,
 				68AF960422BA40E6008C01EC /* Bundle+Appreciation.swift in Sources */,
 				68AF95FD22BA2122008C01EC /* KinAppreciationView.swift in Sources */,
 				68AF955B22B7A1A6008C01EC /* KinAppreciationViewController.swift in Sources */,

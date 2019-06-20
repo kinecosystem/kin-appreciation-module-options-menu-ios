@@ -119,6 +119,16 @@ extension KinAppreciationViewController: KinButtonDelegate {
     func kinButtonDidFill(_ button: KinButton) {
         balance -= button.kin
         setAmountTitle()
+
+        let confettiView = ConfettiView(frame: button.bounds)
+        confettiView.count = 30
+        view.addSubview(confettiView)
+        confettiView.translatesAutoresizingMaskIntoConstraints = false
+        confettiView.topAnchor.constraint(equalTo: button.topAnchor).isActive = true
+        confettiView.leadingAnchor.constraint(equalTo: button.leadingAnchor).isActive = true
+        confettiView.bottomAnchor.constraint(equalTo: button.bottomAnchor).isActive = true
+        confettiView.trailingAnchor.constraint(equalTo: button.trailingAnchor).isActive = true
+        confettiView.explodeAnimation()
     }
 }
 
