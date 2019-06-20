@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
 
     @objc func click() {
-        let vc = KinAppreciationViewController(balance: 100, theme: .light)
+        let vc = KinAppreciationViewController(balance: 10, theme: .light)
         present(vc, animated: true)
     }
 

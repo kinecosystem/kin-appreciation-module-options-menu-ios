@@ -8,6 +8,11 @@
 
 import Foundation
 
+protocol ThemeProtocol {
+    var theme: Theme { get set }
+    func updateTheme()
+}
+
 public enum Theme {
     case light
     case dark

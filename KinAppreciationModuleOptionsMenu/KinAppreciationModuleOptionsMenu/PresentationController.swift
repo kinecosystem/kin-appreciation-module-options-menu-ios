@@ -76,7 +76,7 @@ class PresentationController: UIPresentationController {
     override func containerViewDidLayoutSubviews() {
         super.containerViewDidLayoutSubviews()
 
-        if let presentedView = presentedView {
+        if let presentedView = presentedView, presentedView.layer.mask == nil {
             let corners: UIRectCorner = [.topLeft, .topRight]
             let radius = 10
             let radii = CGSize(width: radius, height: radius)

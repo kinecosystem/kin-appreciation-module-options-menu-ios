@@ -9,14 +9,22 @@
 import UIKit
 
 class KinAppreciationView: UIView {
+    var theme: Theme = .light {
+        didSet {
+            updateTheme()
+        }
+    }
+
     fileprivate let stackView = UIStackView()
-    fileprivate let titleLabel = UILabel()
-    let amountLabel = UILabel()
+    fileprivate let titleButton = UIButton()
+    let amountButton = KinAmountButton()
     let closeButton = UIButton()
-    let k1Button = Button()
-    let k5Button = Button()
-    let k10Button = Button()
-    let k20Button = Button()
+    let k1Button = KinButton()
+    let k5Button = KinButton()
+    let k10Button = KinButton()
+    let k20Button = KinButton()
+
+    // MARK: Lifecycle
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,8 +33,6 @@ class KinAppreciationView: UIView {
         layoutMargins.top = 20
         layoutMargins.bottom = layoutMargins.top
         self.layoutMargins = layoutMargins
-
-        backgroundColor = .white
 
         stackView.axis = .vertical
         stackView.spacing = 24
@@ -37,14 +43,13 @@ class KinAppreciationView: UIView {
         stackView.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor).isActive = true
 
+        amountButton.isUserInteractionEnabled = false
+        stackView.addArrangedSubview(amountButton)
 
-        amountLabel.text = "K"
-        amountLabel.textAlignment = .center
-        stackView.addArrangedSubview(amountLabel)
-
-        titleLabel.text = "title".localized()
-        titleLabel.textAlignment = .center
-        stackView.addArrangedSubview(titleLabel)
+        titleButton.setTitle("title".localized(), for: .normal)
+        titleButton.contentEdgeInsets = UIEdgeInsets(top: 5, left: 0, bottom: 10, right: 0)
+        titleButton.isUserInteractionEnabled = false
+        stackView.addArrangedSubview(titleButton)
 
         k1Button.setTitle("button.k1".localized(), for: .normal)
         k1Button.kin = 1
@@ -62,8 +67,7 @@ class KinAppreciationView: UIView {
         k20Button.kin = 20
         stackView.addArrangedSubview(k20Button)
 
-        closeButton.backgroundColor = UIColor.orange.withAlphaComponent(0.5)
-        closeButton.setTitle("X", for: .normal)
+        closeButton.setImage(UIImage(named: "X", in: .appreciation, compatibleWith: nil), for: .normal)
         addSubview(closeButton)
         closeButton.translatesAutoresizingMaskIntoConstraints = false
         closeButton.topAnchor.constraint(equalTo: topAnchor).isActive = true
@@ -73,6 +77,8 @@ class KinAppreciationView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    // MARK: Layout
 
     override var intrinsicContentSize: CGSize {
         var size = super.intrinsicContentSize
@@ -102,8 +108,29 @@ class KinAppreciationView: UIView {
         contentEdgeInsets.bottom = contentEdgeInsets.top
         contentEdgeInsets.right = contentEdgeInsets.left
         closeButton.contentEdgeInsets = contentEdgeInsets
-
-        print("")
     }
 }
 
+// MARK: - Theme
+
+extension KinAppreciationView: ThemeProtocol {
+    func updateTheme() {
+        switch theme {
+        case .light:
+            backgroundColor = .white
+            amountButton.setTitleColor(.kinPurple, for: .normal)
+            titleButton.setTitleColor(.gray31, for: .normal)
+
+        case .dark:
+            backgroundColor = .white
+            amountButton.setTitleColor(.kinPurple, for: .normal)
+            titleButton.setTitleColor(.gray31, for: .normal)
+        }
+
+        amountButton.theme = theme
+        k1Button.theme = theme
+        k5Button.theme = theme
+        k10Button.theme = theme
+        k20Button.theme = theme
+    }
+}

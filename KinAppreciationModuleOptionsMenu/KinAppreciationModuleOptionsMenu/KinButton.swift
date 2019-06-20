@@ -1,5 +1,5 @@
 //
-//  Button.swift
+//  KinButton.swift
 //  KinAppreciationModuleOptionsMenu
 //
 //  Created by Corey Werner on 19/06/2019.
@@ -8,7 +8,19 @@
 
 import UIKit
 
-class Button: UIControl {
+protocol KinButtonDelegate: NSObjectProtocol {
+    func kinButtonDidFill(_ button: KinButton)
+}
+
+class KinButton: UIControl {
+    weak var delegate: KinButtonDelegate?
+
+    var theme: Theme = .light {
+        didSet {
+            updateTheme()
+        }
+    }
+
     private let fillContainerView = UIView()
     private let fillTitleLabel = UILabel()
     private var fillWidthConstraint: NSLayoutConstraint
@@ -19,17 +31,11 @@ class Button: UIControl {
 
     var kin: Kin = 0 {
         didSet {
-            kinLabel.setTitle("\(kin)", for: .normal)
+            amountButton.setTitle("\(kin)", for: .normal)
         }
     }
-    private let kinLabel = KinLabel()
+    private let amountButton = KinAmountButton()
     private var imageColors: [UInt: UIColor?] = [:]
-
-    var theme: Theme = .light {
-        didSet {
-            updateAppearance()
-        }
-    }
 
     // MARK: Lifecycle
 
@@ -40,6 +46,7 @@ class Button: UIControl {
         super.init(frame: frame)
 
         titleLabel.textAlignment = .center
+        titleLabel.isUserInteractionEnabled = false
         addSubview(titleLabel)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
@@ -47,13 +54,15 @@ class Button: UIControl {
         titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
 
-        addSubview(kinLabel)
-        kinLabel.translatesAutoresizingMaskIntoConstraints = false
-        kinLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        kinLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        kinLabel.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor).isActive = true
+        amountButton.isUserInteractionEnabled = false
+        addSubview(amountButton)
+        amountButton.translatesAutoresizingMaskIntoConstraints = false
+        amountButton.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        amountButton.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        amountButton.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor).isActive = true
 
         fillContainerView.clipsToBounds = true
+        fillContainerView.isUserInteractionEnabled = false
         addSubview(fillContainerView)
         fillContainerView.translatesAutoresizingMaskIntoConstraints = false
         fillContainerView.topAnchor.constraint(equalTo: topAnchor).isActive = true
@@ -73,15 +82,21 @@ class Button: UIControl {
         layer.borderWidth = 1
         layer.cornerRadius = 5
         layer.masksToBounds = true
-
-        updateAppearance()
     }
 
     @objc private func fillAction() {
+        guard fillWidthConstraint.constant != bounds.width else {
+            return
+        }
+
         fillWidthConstraint.constant = bounds.width
 
-        UIView.animate(withDuration: 1) {
+        UIView.animate(withDuration: 1, animations: {
             self.layoutIfNeeded()
+        }) { [weak self] _ in
+            if let strongSelf = self {
+                strongSelf.delegate?.kinButtonDidFill(strongSelf)
+            }
         }
     }
 
@@ -89,10 +104,12 @@ class Button: UIControl {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func didMoveToSuperview() {
-        super.didMoveToSuperview()
+    override func willMove(toWindow newWindow: UIWindow?) {
+        super.willMove(toWindow: newWindow)
 
-        updateState()
+        if newWindow != nil {
+            updateState()
+        }
     }
 
     // MARK: Layout
@@ -106,24 +123,24 @@ class Button: UIControl {
 
 // MARK: - State
 
-extension Button {
+extension KinButton {
     override var isHighlighted: Bool {
         didSet {
-            kinLabel.isHighlighted = isHighlighted
+            amountButton.isHighlighted = isHighlighted
             updateState()
         }
     }
 
     override var isSelected: Bool {
         didSet {
-            kinLabel.isSelected = isSelected
+            amountButton.isSelected = isSelected
             updateState()
         }
     }
 
     override var isEnabled: Bool {
         didSet {
-            kinLabel.isEnabled = isEnabled
+            amountButton.isEnabled = isEnabled
             updateState()
         }
     }
@@ -131,7 +148,6 @@ extension Button {
     private func updateState() {
         titleLabel.text = hierarchicalTitle(for: state)
         titleLabel.textColor = hierarchicalColor(for: state)
-
         fillTitleLabel.text = titleLabel.text
     }
 
@@ -162,7 +178,7 @@ extension Button {
 
 // MARK: - Title Label
 
-extension Button {
+extension KinButton {
     // MARK: Title
 
     func setTitle(_ title: String?, for state: State) {
@@ -192,25 +208,36 @@ extension Button {
     }
 }
 
-// MARK: - Appearance
+// MARK: - Theme
 
-extension Button {
-    private func updateAppearance() {
+extension KinButton: ThemeProtocol {
+    func updateTheme() {
         switch theme {
         case .light:
+            layer.borderColor = UIColor.gray222.cgColor
+
             setTitleColor(.gray140, for: .normal)
             setTitleColor(.gray222, for: .disabled)
 
-            kinLabel.setTitleColor(.kinGreen, for: .normal)
-            kinLabel.setTitleColor(.gray222, for: .disabled)
+            amountButton.setTitleColor(.kinGreen, for: .normal)
+            amountButton.setTitleColor(.gray222, for: .disabled)
 
             fillTitleLabel.backgroundColor = .kinGreen
             fillTitleLabel.textColor = .white
 
-            layer.borderColor = UIColor.gray222.cgColor
-
         case .dark:
             layer.borderColor = UIColor.gray.cgColor
+
+            setTitleColor(.gray140, for: .normal)
+            setTitleColor(.gray222, for: .disabled)
+
+            amountButton.setTitleColor(.kinGreen, for: .normal)
+            amountButton.setTitleColor(.gray222, for: .disabled)
+
+            fillTitleLabel.backgroundColor = .kinGreen
+            fillTitleLabel.textColor = .white
         }
+
+        amountButton.theme = theme
     }
 }

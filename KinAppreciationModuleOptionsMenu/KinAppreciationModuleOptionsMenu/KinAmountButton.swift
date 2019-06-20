@@ -1,5 +1,5 @@
 //
-//  KinLabel.swift
+//  KinAmountButton.swift
 //  KinAppreciationModuleOptionsMenu
 //
 //  Created by Corey Werner on 19/06/2019.
@@ -8,7 +8,13 @@
 
 import UIKit
 
-class KinLabel: UIButton {
+class KinAmountButton: UIButton {
+    var theme: Theme = .light {
+        didSet {
+            updateTheme()
+        }
+    }
+
     convenience init() {
         self.init(frame: .zero)
     }
@@ -31,12 +37,18 @@ class KinLabel: UIButton {
             imageView?.tintColor = titleColor(for: isEnabled ? .normal : .disabled)
         }
     }
+}
 
-    override func setTitleColor(_ color: UIColor?, for state: UIControl.State) {
-        super.setTitleColor(color, for: state)
+// MARK: - Theme
 
-        if state == .normal {
-            imageView?.tintColor = color
+extension KinAmountButton: ThemeProtocol {
+    func updateTheme() {
+        switch theme {
+        case .light:
+            imageView?.tintColor = titleColor(for: .normal)
+
+        case .dark:
+            imageView?.tintColor = titleColor(for: .normal)
         }
     }
 }
