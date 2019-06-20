@@ -23,6 +23,8 @@ extension UIColor {
     static let kinGreen = UIColor(red: 29/255, green: 194/255, blue: 164/255, alpha: 1)
 
     static let gray31 = UIColor(white: 31/255, alpha: 1)
+    static let gray51 = UIColor(white: 51/255, alpha: 1)
+    static let gray88 = UIColor(white: 88/255, alpha: 1)
     static let gray140 = UIColor(white: 140/255, alpha: 1)
     static let gray222 = UIColor(white: 222/255, alpha: 1)
 }

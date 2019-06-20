@@ -13,20 +13,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
 
         let button = UIButton()
-        button.frame = CGRect(x: 100, y: 50, width: 100, height: 100)
-        button.backgroundColor = .red
-        button.setTitle("Click?", for: .normal)
-        button.addTarget(self, action: #selector(click), for: .touchUpInside)
+        button.backgroundColor = .darkGray
+        button.setTitle("Present module", for: .normal)
+        button.addTarget(self, action: #selector(tapped), for: .touchUpInside)
+        button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        button.layer.cornerRadius = 10
         view.addSubview(button)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 50).isActive = true
+        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
 
-    @objc func click() {
-        let vc = KinAppreciationViewController(balance: 10, theme: .light)
-        present(vc, animated: true)
+    @objc func tapped() {
+        let viewController = KinAppreciationViewController(balance: 9, theme: .light)
+        present(viewController, animated: true)
     }
-
 }
 

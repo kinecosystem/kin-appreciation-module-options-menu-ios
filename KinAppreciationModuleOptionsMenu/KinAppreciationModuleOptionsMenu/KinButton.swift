@@ -226,13 +226,13 @@ extension KinButton: ThemeProtocol {
             fillTitleLabel.textColor = .white
 
         case .dark:
-            layer.borderColor = UIColor.gray.cgColor
+            layer.borderColor = UIColor.gray88.cgColor
 
             setTitleColor(.gray140, for: .normal)
-            setTitleColor(.gray222, for: .disabled)
+            setTitleColor(.gray51, for: .disabled)
 
             amountButton.setTitleColor(.kinGreen, for: .normal)
-            amountButton.setTitleColor(.gray222, for: .disabled)
+            amountButton.setTitleColor(.gray51, for: .disabled)
 
             fillTitleLabel.backgroundColor = .kinGreen
             fillTitleLabel.textColor = .white

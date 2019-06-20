@@ -11,6 +11,13 @@ import UIKit
 public class KinAppreciationViewController: UIViewController {
     var balance: Kin
     let theme: Theme
+
+    weak var biDelegate: KinAppreciationBIDelegate? {
+        didSet {
+            KinAppreciationBI.shared.delegate = biDelegate
+        }
+    }
+
     private var kButtons: [KinButton] = []
 
     // MARK: View
@@ -50,7 +57,7 @@ public class KinAppreciationViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        _view.closeButton.addTarget(self, action: #selector(closeAction), for: .touchUpInside)
+        _view.closeButton.addTarget(self, action: #selector(xTappedAction), for: .touchUpInside)
 
         setAmountTitle()
 
@@ -65,6 +72,14 @@ public class KinAppreciationViewController: UIViewController {
         }
     }
 
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        KinAppreciationBI.shared.delegate?.overlayViewed()
+    }
+
+    // MARK: Amount
+
     private func setAmountTitle() {
         _view.amountButton.setTitle("\(balance)", for: .normal)
     }
@@ -73,16 +88,28 @@ public class KinAppreciationViewController: UIViewController {
 // MARK: - Actions
 
 extension KinAppreciationViewController {
-    @objc private func closeAction() {
-        presentingViewController?.dismiss(animated: true)
-    }
-
     @objc private func kButtonAction(_ button: KinButton) {
+        if let type = kButtonToBIMap(button: button) {
+            KinAppreciationBI.shared.delegate?.buttonSelected(type: type)
+        }
+
         for kButton in kButtons {
             if kButton != button {
                 kButton.isEnabled = false
             }
         }
+    }
+
+    @objc private func xTappedAction() {
+        KinAppreciationBI.shared.delegate?.closed(reason: .xButton)
+
+        presentingViewController?.dismiss(animated: true)
+    }
+
+    @objc private func backgroundTappedAction() {
+        KinAppreciationBI.shared.delegate?.closed(reason: .backgroundTap)
+
+        presentingViewController?.dismiss(animated: true)
     }
 }
 
@@ -99,7 +126,9 @@ extension KinAppreciationViewController: KinButtonDelegate {
 
 extension KinAppreciationViewController: UIViewControllerTransitioningDelegate {
     public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return PresentationController(presentedViewController: presented, presenting: presenting)
+        let presentationController = PresentationController(presentedViewController: presented, presenting: presenting)
+        presentationController.tapGesture.addTarget(self, action: #selector(backgroundTappedAction))
+        return presentationController
     }
 
     public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
@@ -109,4 +138,26 @@ extension KinAppreciationViewController: UIViewControllerTransitioningDelegate {
     public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return AnimatedTransitioning(presenting: false)
     }
+}
+
+// MARK: - BI
+
+extension KinAppreciationViewController {
+    private func kButtonToBIMap(button: KinButton) -> KinButtonType? {
+        if button.kin == 1 {
+            return .k1
+        }
+        else if button.kin == 5 {
+            return .k5
+        }
+        else if button.kin == 10 {
+            return .k10
+        }
+        else if button.kin == 20 {
+            return .k20
+        }
+
+        return nil
+    }
+
 }

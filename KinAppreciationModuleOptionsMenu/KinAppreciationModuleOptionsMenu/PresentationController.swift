@@ -9,14 +9,13 @@
 import UIKit
 
 class PresentationController: UIPresentationController {
+    let tapGesture = UITapGestureRecognizer()
+
     lazy private var backgroundView: UIView = {
         let view = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
         view.frame = self.containerView?.bounds ?? .zero
         view.backgroundColor = nil
-
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(backgroundViewTapped))
         view.addGestureRecognizer(tapGesture)
-
         return view
     }()
 
@@ -88,9 +87,5 @@ class PresentationController: UIPresentationController {
             presentedView.layer.mask = mask
             presentedView.layer.masksToBounds = true
         }
-    }
-
-    @objc func backgroundViewTapped() {
-        presentingViewController.dismiss(animated: true)
     }
 }

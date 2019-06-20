@@ -47,24 +47,28 @@ class KinAppreciationView: UIView {
         stackView.addArrangedSubview(amountButton)
 
         titleButton.setTitle("title".localized(), for: .normal)
-        titleButton.contentEdgeInsets = UIEdgeInsets(top: 5, left: 0, bottom: 10, right: 0)
+        titleButton.contentEdgeInsets = UIEdgeInsets(top: 4, left: 0, bottom: 10, right: 0)
         titleButton.isUserInteractionEnabled = false
         stackView.addArrangedSubview(titleButton)
 
         k1Button.setTitle("button.k1".localized(), for: .normal)
         k1Button.kin = 1
+        k1Button.isExclusiveTouch = true
         stackView.addArrangedSubview(k1Button)
 
         k5Button.setTitle("button.k5".localized(), for: .normal)
         k5Button.kin = 5
+        k5Button.isExclusiveTouch = true
         stackView.addArrangedSubview(k5Button)
 
         k10Button.setTitle("button.k10".localized(), for: .normal)
         k10Button.kin = 10
+        k10Button.isExclusiveTouch = true
         stackView.addArrangedSubview(k10Button)
 
         k20Button.setTitle("button.k20".localized(), for: .normal)
         k20Button.kin = 20
+        k20Button.isExclusiveTouch = true
         stackView.addArrangedSubview(k20Button)
 
         closeButton.setImage(UIImage(named: "X", in: .appreciation, compatibleWith: nil), for: .normal)
@@ -118,16 +122,16 @@ extension KinAppreciationView: ThemeProtocol {
         switch theme {
         case .light:
             backgroundColor = .white
-            amountButton.setTitleColor(.kinPurple, for: .normal)
             titleButton.setTitleColor(.gray31, for: .normal)
 
         case .dark:
-            backgroundColor = .white
-            amountButton.setTitleColor(.kinPurple, for: .normal)
-            titleButton.setTitleColor(.gray31, for: .normal)
+            backgroundColor = .gray31
+            titleButton.setTitleColor(.white, for: .normal)
         }
 
+        amountButton.setTitleColor(.kinPurple, for: .normal)
         amountButton.theme = theme
+
         k1Button.theme = theme
         k5Button.theme = theme
         k10Button.theme = theme

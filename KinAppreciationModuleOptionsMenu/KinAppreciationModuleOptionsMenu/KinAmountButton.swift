@@ -43,12 +43,6 @@ class KinAmountButton: UIButton {
 
 extension KinAmountButton: ThemeProtocol {
     func updateTheme() {
-        switch theme {
-        case .light:
-            imageView?.tintColor = titleColor(for: .normal)
-
-        case .dark:
-            imageView?.tintColor = titleColor(for: .normal)
-        }
+        imageView?.tintColor = titleColor(for: .normal)
     }
 }
