@@ -20,6 +20,8 @@ public class KinAppreciationViewController: UIViewController {
 
     private var kButtons: [KinButton] = []
 
+    private var dismissalReason: KinDismissalReason = .hostApp
+
     // MARK: View
 
     lazy var _view: KinAppreciationView = {
@@ -78,6 +80,12 @@ public class KinAppreciationViewController: UIViewController {
         KinAppreciationBI.shared.delegate?.overlayViewed()
     }
 
+    public override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        KinAppreciationBI.shared.delegate?.closed(reason: dismissalReason)
+    }
+
     // MARK: Amount
 
     private func setAmountTitle() {
@@ -101,13 +109,13 @@ extension KinAppreciationViewController {
     }
 
     @objc private func xTappedAction() {
-        KinAppreciationBI.shared.delegate?.closed(reason: .xButton)
+        dismissalReason = .xButton
 
         presentingViewController?.dismiss(animated: true)
     }
 
     @objc private func backgroundTappedAction() {
-        KinAppreciationBI.shared.delegate?.closed(reason: .backgroundTap)
+        dismissalReason = .backgroundTap
 
         presentingViewController?.dismiss(animated: true)
     }
@@ -120,9 +128,12 @@ extension KinAppreciationViewController: KinButtonDelegate {
         balance -= button.kin
         setAmountTitle()
 
+        button.superview?.bringSubviewToFront(button)
+
         let confettiView = ConfettiView(frame: button.bounds)
+        confettiView.delegate = self
         confettiView.count = 30
-        view.addSubview(confettiView)
+        button.superview?.insertSubview(confettiView, belowSubview: button)
         confettiView.translatesAutoresizingMaskIntoConstraints = false
         confettiView.topAnchor.constraint(equalTo: button.topAnchor).isActive = true
         confettiView.leadingAnchor.constraint(equalTo: button.leadingAnchor).isActive = true
@@ -147,6 +158,22 @@ extension KinAppreciationViewController: UIViewControllerTransitioningDelegate {
 
     public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return AnimatedTransitioning(presenting: false)
+    }
+}
+
+// MARK: - Confetti View
+
+extension KinAppreciationViewController: ConfettiViewDelegate {
+    func confettiViewDidComplete(_ confettiView: ConfettiView) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+            guard let strongSelf = self else {
+                return
+            }
+
+            strongSelf.dismissalReason = .timeout
+
+            strongSelf.presentingViewController?.dismiss(animated: true)
+        }
     }
 }
 

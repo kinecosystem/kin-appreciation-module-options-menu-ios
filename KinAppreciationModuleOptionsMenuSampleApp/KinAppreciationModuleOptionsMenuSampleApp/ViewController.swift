@@ -14,20 +14,43 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        createButton(theme: .light, offset: 50, balance: 9)
+        createButton(theme: .dark, offset: 150, balance: 100)
+    }
+
+    func createButton(theme: Theme, offset: CGFloat, balance: Int) {
+        let title: String
+        let selector: Selector
+
+        switch theme {
+        case .light:
+            title = "Light mode"
+            selector = #selector(lightAction(_:))
+        case .dark:
+            title = "Dark mode"
+            selector = #selector(darkAction(_:))
+        }
+
         let button = UIButton()
         button.backgroundColor = .darkGray
-        button.setTitle("Present module", for: .normal)
-        button.addTarget(self, action: #selector(tapped), for: .touchUpInside)
+        button.setTitle(title, for: .normal)
+        button.addTarget(self, action: selector, for: .touchUpInside)
         button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        button.tag = balance
         button.layer.cornerRadius = 10
         view.addSubview(button)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 50).isActive = true
+        button.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: offset).isActive = true
         button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
 
-    @objc func tapped() {
-        let viewController = KinAppreciationViewController(balance: 9, theme: .light)
+    @objc func lightAction(_ button: UIButton) {
+        let viewController = KinAppreciationViewController(balance: button.tag, theme: .light)
+        present(viewController, animated: true)
+    }
+
+    @objc func darkAction(_ button: UIButton) {
+        let viewController = KinAppreciationViewController(balance: button.tag, theme: .dark)
         present(viewController, animated: true)
     }
 }

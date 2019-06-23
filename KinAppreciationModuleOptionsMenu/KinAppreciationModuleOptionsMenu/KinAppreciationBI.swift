@@ -15,16 +15,17 @@ public enum KinButtonType {
     case k20
 }
 
-public enum KinCloseReason {
+public enum KinDismissalReason {
     case xButton
     case backgroundTap
     case timeout
+    case hostApp
 }
 
 public protocol KinAppreciationBIDelegate: NSObjectProtocol {
     func overlayViewed()
     func buttonSelected(type: KinButtonType)
-    func closed(reason: KinCloseReason)
+    func closed(reason: KinDismissalReason)
 }
 
 class KinAppreciationBI {
