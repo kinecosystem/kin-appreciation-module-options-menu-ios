@@ -9,11 +9,18 @@
 import UIKit
 import KinSDK
 
-public class KinAppreciationViewController: UIViewController {
-    var balance: Kin
-    let theme: Theme
+public protocol KinAppreciationViewControllerDelegate: NSObjectProtocol {
+    func kinAppreciationViewControllerDidPresent(_ viewController: KinAppreciationViewController)
+    func kinAppreciationViewController(_ viewController: KinAppreciationViewController, didDismissWith reason: KinAppreciationViewController.DismissReason)
+    func kinAppreciationViewController(_ viewController: KinAppreciationViewController, didSelect amount: Kin)
+}
 
-    weak var biDelegate: KinAppreciationBIDelegate? {
+public class KinAppreciationViewController: UIViewController {
+    public private(set) var balance: Kin
+    public let theme: Theme
+
+    public weak var delegate: KinAppreciationViewControllerDelegate?
+    public weak var biDelegate: KinAppreciationBIDelegate? {
         didSet {
             KinAppreciationBI.shared.delegate = biDelegate
         }
@@ -21,7 +28,7 @@ public class KinAppreciationViewController: UIViewController {
 
     private var kButtons: [KinButton] = []
 
-    private var dismissalReason: KinDismissalReason = .hostApp
+    private var dismissalReason: DismissReason = .hostApplication
 
     // MARK: View
 
@@ -48,7 +55,7 @@ public class KinAppreciationViewController: UIViewController {
         self.theme = theme
 
         UIFont.custom.loadFontsIfNeeded()
-        
+
         super.init(nibName: nil, bundle: nil)
 
         transitioningDelegate = self
@@ -81,18 +88,26 @@ public class KinAppreciationViewController: UIViewController {
         super.viewDidAppear(animated)
 
         KinAppreciationBI.shared.delegate?.overlayViewed()
+
+        delegate?.kinAppreciationViewControllerDidPresent(self)
     }
 
     public override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
-        KinAppreciationBI.shared.delegate?.closed(reason: dismissalReason)
+        KinAppreciationBI.shared.delegate?.closed(reason: dismissalReason.biMap)
+
+        delegate?.kinAppreciationViewController(self, didDismissWith: dismissalReason)
     }
 
-    // MARK: Amount
+    // MARK: Convenience
 
     private func setAmountTitle() {
         _view.amountButton.setTitle("\(balance)", for: .normal)
+    }
+
+    private var hasSelectedButton: Bool {
+        return kButtons.first { $0.isSelected } != nil
     }
 }
 
@@ -100,6 +115,12 @@ public class KinAppreciationViewController: UIViewController {
 
 extension KinAppreciationViewController {
     @objc private func kButtonAction(_ button: KinButton) {
+        guard !hasSelectedButton else {
+            return
+        }
+
+        button.isSelected = true
+
         if let type = kButtonToBIMap(button: button) {
             KinAppreciationBI.shared.delegate?.buttonSelected(type: type)
         }
@@ -109,16 +130,26 @@ extension KinAppreciationViewController {
                 kButton.isEnabled = false
             }
         }
+
+        delegate?.kinAppreciationViewController(self, didSelect: button.kin)
     }
 
     @objc private func xTappedAction() {
-        dismissalReason = .xButton
+        guard !hasSelectedButton else {
+            return
+        }
+        
+        dismissalReason = .closeButton
 
         presentingViewController?.dismiss(animated: true)
     }
 
     @objc private func backgroundTappedAction() {
-        dismissalReason = .backgroundTap
+        guard !hasSelectedButton else {
+            return
+        }
+
+        dismissalReason = .touchOutside
 
         presentingViewController?.dismiss(animated: true)
     }
@@ -168,14 +199,40 @@ extension KinAppreciationViewController: UIViewControllerTransitioningDelegate {
 
 extension KinAppreciationViewController: ConfettiViewDelegate {
     func confettiViewDidComplete(_ confettiView: ConfettiView) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
             guard let strongSelf = self else {
                 return
             }
 
-            strongSelf.dismissalReason = .timeout
+            strongSelf.dismissalReason = .itemSelected
 
             strongSelf.presentingViewController?.dismiss(animated: true)
+        }
+    }
+}
+
+// MARK: - Dismiss Reason
+
+extension KinAppreciationViewController {
+    public enum DismissReason {
+        case closeButton
+        case touchOutside
+        case itemSelected
+        case hostApplication
+    }
+}
+
+extension KinAppreciationViewController.DismissReason {
+    var biMap: KinDismissalReason {
+        switch self {
+        case .closeButton:
+            return .xButton
+        case .touchOutside:
+            return .backgroundTap
+        case .itemSelected:
+            return .timeout
+        case .hostApplication:
+            return .hostApp
         }
     }
 }

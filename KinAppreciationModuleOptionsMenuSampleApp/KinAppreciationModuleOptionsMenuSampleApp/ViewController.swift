@@ -47,12 +47,27 @@ class ViewController: UIViewController {
 
     @objc func lightAction(_ button: UIButton) {
         let viewController = KinAppreciationViewController(balance: Kin(button.tag), theme: .light)
+        viewController.delegate = self
         present(viewController, animated: true)
     }
 
     @objc func darkAction(_ button: UIButton) {
         let viewController = KinAppreciationViewController(balance: Kin(button.tag), theme: .dark)
+        viewController.delegate = self
         present(viewController, animated: true)
     }
 }
 
+extension ViewController: KinAppreciationViewControllerDelegate {
+    func kinAppreciationViewControllerDidPresent(_ viewController: KinAppreciationViewController) {
+
+    }
+
+    func kinAppreciationViewController(_ viewController: KinAppreciationViewController, didDismissWith reason: KinAppreciationViewController.DismissReason) {
+
+    }
+
+    func kinAppreciationViewController(_ viewController: KinAppreciationViewController, didSelect amount: Kin) {
+
+    }
+}
