@@ -46,6 +46,8 @@ public class KinAppreciationViewController: UIViewController {
     public init(balance: Kin, theme: Theme) {
         self.balance = balance
         self.theme = theme
+
+        UIFont.custom.loadFontsIfNeeded()
         
         super.init(nibName: nil, bundle: nil)
 

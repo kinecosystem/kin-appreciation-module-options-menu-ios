@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2044A5E034E0A4130801BF10 /* Pods_Dependencies_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B33F746D3B12955EA6CF85B /* Pods_Dependencies_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework */; };
-		6812449022BFB3450096D50A /* orangejuice.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6812448F22BFB3450096D50A /* orangejuice.ttf */; };
 		68AF950422B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AF94FA22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework */; };
 		68AF950922B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF950822B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.swift */; };
 		68AF950B22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 68AF94FD22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,13 +20,13 @@
 		68AF95FF22BA4055008C01EC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68AF95FE22BA4055008C01EC /* Localizable.strings */; };
 		68AF960122BA4094008C01EC /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960022BA4094008C01EC /* String+Localization.swift */; };
 		68AF960422BA40E6008C01EC /* Bundle+Appreciation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960322BA40E6008C01EC /* Bundle+Appreciation.swift */; };
-		68AF960622BA4353008C01EC /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960522BA4353008C01EC /* Types.swift */; };
 		68AF960822BA61F3008C01EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68AF960722BA61F3008C01EC /* Assets.xcassets */; };
 		68AF960C22BB5F9B008C01EC /* KinAmountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960B22BB5F9B008C01EC /* KinAmountButton.swift */; };
 		68AF960E22BB792D008C01EC /* KinAppreciationBI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960D22BB792D008C01EC /* KinAppreciationBI.swift */; };
 		68AF961022BB852A008C01EC /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960F22BB852A008C01EC /* ConfettiView.swift */; };
 		68AF961422BF7ED6008C01EC /* Sailec.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68AF961222BF7ED6008C01EC /* Sailec.otf */; };
 		68AF961522BF7ED6008C01EC /* SailecMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68AF961322BF7ED6008C01EC /* SailecMedium.otf */; };
+		68AF963B22C0A74C008C01EC /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF963A22C0A74C008C01EC /* UIFont+Custom.swift */; };
 		7F70639FCF214864FFC7E43F /* Pods_Dependencies_KinAppreciationModuleOptionsMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696F9AD97B22A481B5575869 /* Pods_Dependencies_KinAppreciationModuleOptionsMenu.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +46,6 @@
 		0BE7336BA60F7CD5C68A20F9 /* Pods-KinAppreciationModuleOptionsMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu.release.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu/Pods-KinAppreciationModuleOptionsMenu.release.xcconfig"; sourceTree = "<group>"; };
 		2B33F746D3B12955EA6CF85B /* Pods_Dependencies_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dependencies_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A90338FEC82AF48159966BC /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6812448F22BFB3450096D50A /* orangejuice.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = orangejuice.ttf; sourceTree = "<group>"; };
 		68AF94FA22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KinAppreciationModuleOptionsMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AF94FD22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KinAppreciationModuleOptionsMenu.h; sourceTree = "<group>"; };
 		68AF94FE22B79AED008C01EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,13 +61,13 @@
 		68AF95FE22BA4055008C01EC /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		68AF960022BA4094008C01EC /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		68AF960322BA40E6008C01EC /* Bundle+Appreciation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Appreciation.swift"; sourceTree = "<group>"; };
-		68AF960522BA4353008C01EC /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		68AF960722BA61F3008C01EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68AF960B22BB5F9B008C01EC /* KinAmountButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KinAmountButton.swift; sourceTree = "<group>"; };
 		68AF960D22BB792D008C01EC /* KinAppreciationBI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinAppreciationBI.swift; sourceTree = "<group>"; };
 		68AF960F22BB852A008C01EC /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
 		68AF961222BF7ED6008C01EC /* Sailec.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sailec.otf; sourceTree = "<group>"; };
 		68AF961322BF7ED6008C01EC /* SailecMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SailecMedium.otf; sourceTree = "<group>"; };
+		68AF963A22C0A74C008C01EC /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
 		696F9AD97B22A481B5575869 /* Pods_Dependencies_KinAppreciationModuleOptionsMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dependencies_KinAppreciationModuleOptionsMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC4BCA91EBB6D546B21DD3C /* Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenuTests/Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9217BCEB3C3B04E724DCB930 /* Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				68AF95F422B9E12F008C01EC /* KinButton.swift */,
 				68AF95FE22BA4055008C01EC /* Localizable.strings */,
 				68AF95F822BA1C48008C01EC /* PresentationController.swift */,
-				68AF960522BA4353008C01EC /* Types.swift */,
 			);
 			path = KinAppreciationModuleOptionsMenu;
 			sourceTree = "<group>";
@@ -159,6 +156,7 @@
 			children = (
 				68AF960022BA4094008C01EC /* String+Localization.swift */,
 				68AF960322BA40E6008C01EC /* Bundle+Appreciation.swift */,
+				68AF963A22C0A74C008C01EC /* UIFont+Custom.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -166,7 +164,6 @@
 		68AF961122BF7EC3008C01EC /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				6812448F22BFB3450096D50A /* orangejuice.ttf */,
 				68AF961222BF7ED6008C01EC /* Sailec.otf */,
 				68AF961322BF7ED6008C01EC /* SailecMedium.otf */,
 			);
@@ -297,7 +294,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6812449022BFB3450096D50A /* orangejuice.ttf in Resources */,
 				68AF961422BF7ED6008C01EC /* Sailec.otf in Resources */,
 				68AF961522BF7ED6008C01EC /* SailecMedium.otf in Resources */,
 				68AF960822BA61F3008C01EC /* Assets.xcassets in Resources */,
@@ -388,11 +384,11 @@
 				68AF95FD22BA2122008C01EC /* KinAppreciationView.swift in Sources */,
 				68AF955B22B7A1A6008C01EC /* KinAppreciationViewController.swift in Sources */,
 				68AF95F722B9E1EB008C01EC /* Appearance.swift in Sources */,
+				68AF963B22C0A74C008C01EC /* UIFont+Custom.swift in Sources */,
 				68AF960C22BB5F9B008C01EC /* KinAmountButton.swift in Sources */,
 				68AF960E22BB792D008C01EC /* KinAppreciationBI.swift in Sources */,
 				68AF95F522B9E12F008C01EC /* KinButton.swift in Sources */,
 				68AF95FB22BA1CC4008C01EC /* AnimatedTransitioning.swift in Sources */,
-				68AF960622BA4353008C01EC /* Types.swift in Sources */,
 				68AF960122BA4094008C01EC /* String+Localization.swift in Sources */,
 				68AF95F922BA1C48008C01EC /* PresentationController.swift in Sources */,
 			);

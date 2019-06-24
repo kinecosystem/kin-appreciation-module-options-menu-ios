@@ -49,6 +49,7 @@ class KinButton: UIControl {
 
         super.init(frame: frame)
 
+        titleLabel.font = .sailecFont(ofSize: 14)
         titleLabel.textAlignment = .center
         titleLabel.isUserInteractionEnabled = false
         addSubview(titleLabel)
@@ -58,6 +59,7 @@ class KinButton: UIControl {
         titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
 
+        amountButton.titleLabel?.font = .sailecFont(ofSize: 20, weight: .medium)
         amountButton.isUserInteractionEnabled = false
         addSubview(amountButton)
         amountButton.translatesAutoresizingMaskIntoConstraints = false
@@ -73,6 +75,7 @@ class KinButton: UIControl {
         fillContainerView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         fillContainerView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
 
+        fillTitleLabel.font = titleLabel.font
         fillTitleLabel.textAlignment = .center
         fillContainerView.addSubview(fillTitleLabel)
         fillTitleLabel.translatesAutoresizingMaskIntoConstraints = false

@@ -32,6 +32,14 @@ class KinAmountButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
 
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+        var imageEdgeInsets = self.imageEdgeInsets
+        imageEdgeInsets.bottom = ((titleLabel?.bounds.size.height ?? 0) - (imageView?.image?.size.height ?? 0)) / 4
+        self.imageEdgeInsets = imageEdgeInsets
+    }
+
     override var isEnabled: Bool {
         didSet {
             imageView?.tintColor = titleColor(for: isEnabled ? .normal : .disabled)

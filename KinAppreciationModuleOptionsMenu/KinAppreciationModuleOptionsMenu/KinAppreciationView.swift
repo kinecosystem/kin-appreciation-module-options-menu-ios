@@ -43,10 +43,12 @@ class KinAppreciationView: UIView {
         stackView.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor).isActive = true
 
+        amountButton.titleLabel?.font = .sailecFont(ofSize: 16, weight: .medium)
         amountButton.isUserInteractionEnabled = false
         stackView.addArrangedSubview(amountButton)
 
         titleButton.setTitle("title".localized(), for: .normal)
+        titleButton.titleLabel?.font = .sailecFont(ofSize: 20, weight: .medium)
         titleButton.contentEdgeInsets = UIEdgeInsets(top: 4, left: 0, bottom: 10, right: 0)
         titleButton.isUserInteractionEnabled = false
         stackView.addArrangedSubview(titleButton)
