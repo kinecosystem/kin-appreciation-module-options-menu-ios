@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KinSDK
 
 public class KinAppreciationViewController: UIViewController {
     var balance: Kin

@@ -12,14 +12,13 @@
 		68AF952622B79B4C008C01EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AF952422B79B4C008C01EC /* Main.storyboard */; };
 		68AF952822B79B4F008C01EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68AF952722B79B4F008C01EC /* Assets.xcassets */; };
 		68AF952B22B79B4F008C01EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AF952922B79B4F008C01EC /* LaunchScreen.storyboard */; };
-		E31590B0576DB022AA8B0FD5 /* Pods_KinAppreciationModuleOptionsMenuSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF8DC51BC9FF55A3C12D09F /* Pods_KinAppreciationModuleOptionsMenuSampleApp.framework */; };
+		9B3BDCB5A814EF23F1B7F229 /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8775FAF31E78B0FDB8CA001E /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0AC55A4FC5B9E0CF3DC99034 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		0D7737BD6BF63E132A70096B /* Pods-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenuSampleApp/Pods-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		36BC6DA688E7AE167191EC5A /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		3AF8DC51BC9FF55A3C12D09F /* Pods_KinAppreciationModuleOptionsMenuSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinAppreciationModuleOptionsMenuSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5990C6ADF9334B87E2FF7584 /* Pods-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenuSampleApp/Pods-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		68AF951D22B79B4C008C01EC /* KinAppreciationModuleOptionsMenuSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinAppreciationModuleOptionsMenuSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AF952022B79B4C008C01EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 		68AF952C22B79B4F008C01EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E0EF86BEBA21C6326CA573D /* Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		83EA3C2CCC6D2387DBE97F19 /* Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8775FAF31E78B0FDB8CA001E /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E31590B0576DB022AA8B0FD5 /* Pods_KinAppreciationModuleOptionsMenuSampleApp.framework in Frameworks */,
+				9B3BDCB5A814EF23F1B7F229 /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +47,7 @@
 		4808EF81167C16E735769FCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3AF8DC51BC9FF55A3C12D09F /* Pods_KinAppreciationModuleOptionsMenuSampleApp.framework */,
+				8775FAF31E78B0FDB8CA001E /* Pods_Dependencies_KinAppreciationModuleOptionsMenuSampleApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -108,7 +108,7 @@
 				68AF951922B79B4C008C01EC /* Sources */,
 				68AF951A22B79B4C008C01EC /* Frameworks */,
 				68AF951B22B79B4C008C01EC /* Resources */,
-				ABAC92195AC8794F1A748FD9 /* [CP] Embed Pods Frameworks */,
+				8567C9A520FD4ACF1AD01CFC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,21 +166,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		ABAC92195AC8794F1A748FD9 /* [CP] Embed Pods Frameworks */ = {
+		8567C9A520FD4ACF1AD01CFC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KinAppreciationModuleOptionsMenuSampleApp/Pods-KinAppreciationModuleOptionsMenuSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KinAppreciationModuleOptionsMenuSampleApp/Pods-KinAppreciationModuleOptionsMenuSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KinAppreciationModuleOptionsMenuSampleApp/Pods-KinAppreciationModuleOptionsMenuSampleApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CAA1F807717EDE3DD33CC6A2 /* [CP] Check Pods Manifest.lock */ = {
@@ -198,7 +198,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KinAppreciationModuleOptionsMenuSampleApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -357,7 +357,7 @@
 		};
 		68AF953022B79B4F008C01EC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5990C6ADF9334B87E2FF7584 /* Pods-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig */;
+			baseConfigurationReference = 83EA3C2CCC6D2387DBE97F19 /* Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,7 +375,7 @@
 		};
 		68AF953122B79B4F008C01EC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D7737BD6BF63E132A70096B /* Pods-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig */;
+			baseConfigurationReference = 7E0EF86BEBA21C6326CA573D /* Pods-Dependencies-KinAppreciationModuleOptionsMenuSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -112,6 +112,19 @@ class KinAppreciationView: UIView {
         contentEdgeInsets.bottom = contentEdgeInsets.top
         contentEdgeInsets.right = contentEdgeInsets.left
         closeButton.contentEdgeInsets = contentEdgeInsets
+
+
+        if Int(k1Button.amountButtonWidth.constant) == 0 {
+            let kButtons = [k1Button, k5Button, k10Button, k20Button]
+            let maxWidth = kButtons.map({ $0.amountButton.bounds.width }).max()
+
+            kButtons.forEach({
+                if let width = maxWidth {
+                    $0.amountButtonWidth.constant = width
+                    $0.amountButtonWidth.isActive = true
+                }
+            })
+        }
     }
 }
 

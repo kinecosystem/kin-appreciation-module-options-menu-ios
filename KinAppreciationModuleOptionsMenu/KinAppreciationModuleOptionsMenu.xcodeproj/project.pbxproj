@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2044A5E034E0A4130801BF10 /* Pods_Dependencies_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B33F746D3B12955EA6CF85B /* Pods_Dependencies_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework */; };
+		6812449022BFB3450096D50A /* orangejuice.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6812448F22BFB3450096D50A /* orangejuice.ttf */; };
 		68AF950422B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AF94FA22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework */; };
 		68AF950922B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF950822B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.swift */; };
 		68AF950B22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 68AF94FD22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,7 +26,9 @@
 		68AF960C22BB5F9B008C01EC /* KinAmountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960B22BB5F9B008C01EC /* KinAmountButton.swift */; };
 		68AF960E22BB792D008C01EC /* KinAppreciationBI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960D22BB792D008C01EC /* KinAppreciationBI.swift */; };
 		68AF961022BB852A008C01EC /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960F22BB852A008C01EC /* ConfettiView.swift */; };
-		74C3D23CC74FEBCB013E7063 /* Pods_KinAppreciationModuleOptionsMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DAA20284ABEDB90DB87708 /* Pods_KinAppreciationModuleOptionsMenu.framework */; };
+		68AF961422BF7ED6008C01EC /* Sailec.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68AF961222BF7ED6008C01EC /* Sailec.otf */; };
+		68AF961522BF7ED6008C01EC /* SailecMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68AF961322BF7ED6008C01EC /* SailecMedium.otf */; };
+		7F70639FCF214864FFC7E43F /* Pods_Dependencies_KinAppreciationModuleOptionsMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696F9AD97B22A481B5575869 /* Pods_Dependencies_KinAppreciationModuleOptionsMenu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +43,11 @@
 
 /* Begin PBXFileReference section */
 		021FA6B856D3CEBF7C104990 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu.debug.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu/Pods-Dependencies-KinAppreciationModuleOptionsMenu.debug.xcconfig"; sourceTree = "<group>"; };
-		02DAA20284ABEDB90DB87708 /* Pods_KinAppreciationModuleOptionsMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinAppreciationModuleOptionsMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B4A8CFF8CA022DCCB177075 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
 		0BE7336BA60F7CD5C68A20F9 /* Pods-KinAppreciationModuleOptionsMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu.release.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu/Pods-KinAppreciationModuleOptionsMenu.release.xcconfig"; sourceTree = "<group>"; };
+		2B33F746D3B12955EA6CF85B /* Pods_Dependencies_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dependencies_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A90338FEC82AF48159966BC /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6812448F22BFB3450096D50A /* orangejuice.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = orangejuice.ttf; sourceTree = "<group>"; };
 		68AF94FA22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KinAppreciationModuleOptionsMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AF94FD22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KinAppreciationModuleOptionsMenu.h; sourceTree = "<group>"; };
 		68AF94FE22B79AED008C01EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,7 +68,14 @@
 		68AF960B22BB5F9B008C01EC /* KinAmountButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KinAmountButton.swift; sourceTree = "<group>"; };
 		68AF960D22BB792D008C01EC /* KinAppreciationBI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinAppreciationBI.swift; sourceTree = "<group>"; };
 		68AF960F22BB852A008C01EC /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
+		68AF961222BF7ED6008C01EC /* Sailec.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sailec.otf; sourceTree = "<group>"; };
+		68AF961322BF7ED6008C01EC /* SailecMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SailecMedium.otf; sourceTree = "<group>"; };
+		696F9AD97B22A481B5575869 /* Pods_Dependencies_KinAppreciationModuleOptionsMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dependencies_KinAppreciationModuleOptionsMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC4BCA91EBB6D546B21DD3C /* Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenuTests/Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9217BCEB3C3B04E724DCB930 /* Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
+		993AFF2C8475D552DF06FCCD /* Pods-KinAppreciationModuleOptionsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenuTests/Pods-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
+		B68C89681EE917107EEF651E /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D39399D1B0ADB88CA7D9B320 /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
 		F48CB93AFE6AAAE78B0CCDC6 /* Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu/Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		FAB019A4DF19CF1102A28507 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu/Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig"; sourceTree = "<group>"; };
 		FBB7334E6522ABD09304336C /* Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -72,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74C3D23CC74FEBCB013E7063 /* Pods_KinAppreciationModuleOptionsMenu.framework in Frameworks */,
+				7F70639FCF214864FFC7E43F /* Pods_Dependencies_KinAppreciationModuleOptionsMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68AF950422B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework in Frameworks */,
+				2044A5E034E0A4130801BF10 /* Pods_Dependencies_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +125,7 @@
 		68AF94FC22B79AED008C01EC /* KinAppreciationModuleOptionsMenu */ = {
 			isa = PBXGroup;
 			children = (
+				68AF961122BF7EC3008C01EC /* Fonts */,
 				68AF960722BA61F3008C01EC /* Assets.xcassets */,
 				68AF960222BA40A0008C01EC /* Extensions */,
 				68AF95FA22BA1CC4008C01EC /* AnimatedTransitioning.swift */,
@@ -147,10 +163,21 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		68AF961122BF7EC3008C01EC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6812448F22BFB3450096D50A /* orangejuice.ttf */,
+				68AF961222BF7ED6008C01EC /* Sailec.otf */,
+				68AF961322BF7ED6008C01EC /* SailecMedium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		7DED4E0723E482AD57B6D3D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				02DAA20284ABEDB90DB87708 /* Pods_KinAppreciationModuleOptionsMenu.framework */,
+				696F9AD97B22A481B5575869 /* Pods_Dependencies_KinAppreciationModuleOptionsMenu.framework */,
+				2B33F746D3B12955EA6CF85B /* Pods_Dependencies_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,6 +191,12 @@
 				9217BCEB3C3B04E724DCB930 /* Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig */,
 				F48CB93AFE6AAAE78B0CCDC6 /* Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig */,
 				0BE7336BA60F7CD5C68A20F9 /* Pods-KinAppreciationModuleOptionsMenu.release.xcconfig */,
+				8EC4BCA91EBB6D546B21DD3C /* Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */,
+				993AFF2C8475D552DF06FCCD /* Pods-KinAppreciationModuleOptionsMenuTests.release.xcconfig */,
+				4A90338FEC82AF48159966BC /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */,
+				D39399D1B0ADB88CA7D9B320 /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */,
+				B68C89681EE917107EEF651E /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */,
+				0B4A8CFF8CA022DCCB177075 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -206,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68AF951122B79AED008C01EC /* Build configuration list for PBXNativeTarget "KinAppreciationModuleOptionsMenuTests" */;
 			buildPhases = (
+				EFA5D74464CEC210177C455E /* [CP] Check Pods Manifest.lock */,
 				68AF94FF22B79AED008C01EC /* Sources */,
 				68AF950022B79AED008C01EC /* Frameworks */,
 				68AF950122B79AED008C01EC /* Resources */,
+				6D427423A1B15AEEAD917B01 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,6 +297,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6812449022BFB3450096D50A /* orangejuice.ttf in Resources */,
+				68AF961422BF7ED6008C01EC /* Sailec.otf in Resources */,
+				68AF961522BF7ED6008C01EC /* SailecMedium.otf in Resources */,
 				68AF960822BA61F3008C01EC /* Assets.xcassets in Resources */,
 				68AF95FF22BA4055008C01EC /* Localizable.strings in Resources */,
 			);
@@ -292,7 +330,46 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KinAppreciationModuleOptionsMenu-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Dependencies-KinAppreciationModuleOptionsMenu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D427423A1B15AEEAD917B01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFA5D74464CEC210177C455E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -462,12 +539,13 @@
 		};
 		68AF950F22B79AED008C01EC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48CB93AFE6AAAE78B0CCDC6 /* Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig */;
+			baseConfigurationReference = 021FA6B856D3CEBF7C104990 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9YRT233U8R;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -489,12 +567,13 @@
 		};
 		68AF951022B79AED008C01EC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BE7336BA60F7CD5C68A20F9 /* Pods-KinAppreciationModuleOptionsMenu.release.xcconfig */;
+			baseConfigurationReference = FAB019A4DF19CF1102A28507 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9YRT233U8R;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -515,6 +594,7 @@
 		};
 		68AF951222B79AED008C01EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B68C89681EE917107EEF651E /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KinAppreciationModuleOptionsMenuTests/Info.plist;
@@ -532,6 +612,7 @@
 		};
 		68AF951322B79AED008C01EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B4A8CFF8CA022DCCB177075 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KinAppreciationModuleOptionsMenuTests/Info.plist;

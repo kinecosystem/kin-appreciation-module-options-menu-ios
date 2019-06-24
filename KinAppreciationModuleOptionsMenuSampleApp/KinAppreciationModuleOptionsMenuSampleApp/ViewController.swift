@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KinSDK
 import KinAppreciationModuleOptionsMenu
 
 class ViewController: UIViewController {
@@ -45,12 +46,12 @@ class ViewController: UIViewController {
     }
 
     @objc func lightAction(_ button: UIButton) {
-        let viewController = KinAppreciationViewController(balance: button.tag, theme: .light)
+        let viewController = KinAppreciationViewController(balance: Kin(button.tag), theme: .light)
         present(viewController, animated: true)
     }
 
     @objc func darkAction(_ button: UIButton) {
-        let viewController = KinAppreciationViewController(balance: button.tag, theme: .dark)
+        let viewController = KinAppreciationViewController(balance: Kin(button.tag), theme: .dark)
         present(viewController, animated: true)
     }
 }

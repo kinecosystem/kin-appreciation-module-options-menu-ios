@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KinSDK
 
 protocol KinButtonDelegate: NSObjectProtocol {
     func kinButtonDidFill(_ button: KinButton)
@@ -34,7 +35,8 @@ class KinButton: UIControl {
             amountButton.setTitle("\(kin)", for: .normal)
         }
     }
-    private let amountButton = KinAmountButton()
+    let amountButton = KinAmountButton()
+    let amountButtonWidth: NSLayoutConstraint
     private var imageColors: [UInt: UIColor?] = [:]
 
     // MARK: Lifecycle
@@ -42,6 +44,8 @@ class KinButton: UIControl {
     override init(frame: CGRect) {
         fillWidthConstraint = fillContainerView.widthAnchor.constraint(equalToConstant: 0)
         fillWidthConstraint.isActive = true
+
+        amountButtonWidth = amountButton.widthAnchor.constraint(equalToConstant: 0)
 
         super.init(frame: frame)
 

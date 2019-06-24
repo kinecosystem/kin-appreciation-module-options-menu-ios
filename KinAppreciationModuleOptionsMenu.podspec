@@ -15,7 +15,11 @@ Pod::Spec.new do |s|
     :git => 'https://github.com/kinecosystem/kin-appreciation-module-options-menu-ios.git', 
     :tag => s.version.to_s
   }
-  s.source_files = 'KinAppreciationModuleOptionsMenu/KinAppreciationModuleOptionsMenu/**/*.swift'
+  s.source_files = 'KinAppreciationModuleOptionsMenu/KinAppreciationModuleOptionsMenu/**/*.{strings,swift}'
+  s.resources    = 'KinAppreciationModuleOptionsMenu/KinAppreciationModuleOptionsMenu/**/*.{xcassets}'
+  s.resource_bundles = {
+    'KinAppreciationModuleOptionsMenu' => ['KinAppreciationModuleOptionsMenu/KinAppreciationModuleOptionsMenu/**/*.{ttf,otf}']
+  }
 
   s.dependency 'KinSDK', '~> 1.0.0'
 
@@ -26,7 +30,7 @@ Pod::Spec.new do |s|
   s.app_spec 'SampleApp' do |as|
     root = 'KinAppreciationModuleOptionsMenuSampleApp/KinAppreciationModuleOptionsMenuSampleApp'
 
-    as.source_files = root+'/**/*.{strings,swift}'
+    as.source_files = root+'/**/*.swift'
     as.resources    = root+'/**/*.{storyboard,xcassets}'
   end
 end

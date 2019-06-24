@@ -5,7 +5,7 @@ platform :ios, '9.0'
 workspace 'KinAppreciationModuleOptionsMenu'
 
 abstract_target 'Dependencies' do
-  pod 'KinSDK', '~> 1.0.0'
+  pod 'KinSDK'
 
   target 'KinAppreciationModuleOptionsMenu' do
     project 'KinAppreciationModuleOptionsMenu/KinAppreciationModuleOptionsMenu'
@@ -13,7 +13,6 @@ abstract_target 'Dependencies' do
   end
 
   target 'KinAppreciationModuleOptionsMenuSampleApp' do
-    project 'KinAppreciationModuleOptionsMenuSampleApp/KinAppreciationModuleOptionsMenuSampleApp'
-    pod 'KinAppreciationModuleOptionsMenu', :path => './'
+    project 'KinAppreciationModuleOptionsMenuSampleApp/KinAppreciationModuleOptionsMenuSampleApp' 
   end
 end

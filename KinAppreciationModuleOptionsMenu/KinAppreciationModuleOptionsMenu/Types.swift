@@ -8,4 +8,4 @@
 
 import Foundation
 
-public typealias Kin = Int
+//public typealias Kin = Int
