@@ -7,8 +7,8 @@
 */
 
 "title" = "Gift with Kin";
-
 "button.k1" = "Love it";
 "button.k5" = "You rule";
 "button.k10" = "Amazing stuff";
 "button.k20" = "You made my day";
+"thanks" = "Thank you!";

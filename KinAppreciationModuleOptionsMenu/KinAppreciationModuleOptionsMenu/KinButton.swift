@@ -84,27 +84,11 @@ class KinButton: UIControl {
         fillTitleLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         fillTitleLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
 
-        addTarget(self, action: #selector(fillAction), for: .touchUpInside)
+        addTarget(self, action: #selector(fillAnimation), for: .touchUpInside)
 
         layer.borderWidth = 1
         layer.cornerRadius = 5
         layer.masksToBounds = true
-    }
-
-    @objc private func fillAction() {
-        guard fillWidthConstraint.constant != bounds.width else {
-            return
-        }
-
-        fillWidthConstraint.constant = bounds.width
-
-        UIView.animate(withDuration: 1, animations: {
-            self.layoutIfNeeded()
-        }) { [weak self] _ in
-            if let strongSelf = self {
-                strongSelf.delegate?.kinButtonDidFill(strongSelf)
-            }
-        }
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -215,6 +199,41 @@ extension KinButton {
     }
 }
 
+// MARK: - Animations
+
+extension KinButton {
+    @objc private func fillAnimation() {
+        guard fillWidthConstraint.constant != bounds.width else {
+            return
+        }
+
+        fillWidthConstraint.constant = bounds.width
+
+        UIView.animate(withDuration: 1, animations: {
+            self.layoutIfNeeded()
+        }) { [weak self] _ in
+            guard let strongSelf = self else{
+                return
+            }
+
+            strongSelf.thanksTitleAnimation()
+            strongSelf.delegate?.kinButtonDidFill(strongSelf)
+        }
+    }
+
+    private func thanksTitleAnimation() {
+        UIView.animate(withDuration: 0.15, animations: { [weak self] in
+            self?.fillTitleLabel.alpha = 0
+        }) { [weak self] _ in
+            self?.fillTitleLabel.text = "thanks".localized()
+
+            UIView.animate(withDuration: 0.15, animations: {
+                self?.fillTitleLabel.alpha = 1
+            })
+        }
+    }
+}
+
 // MARK: - Theme
 
 extension KinButton: ThemeProtocol {
@@ -229,7 +248,7 @@ extension KinButton: ThemeProtocol {
             amountButton.setTitleColor(.kinGreen, for: .normal)
             amountButton.setTitleColor(.gray222, for: .disabled)
 
-            fillTitleLabel.backgroundColor = .kinGreen
+            fillContainerView.backgroundColor = .kinGreen
             fillTitleLabel.textColor = .white
 
         case .dark:
@@ -241,7 +260,7 @@ extension KinButton: ThemeProtocol {
             amountButton.setTitleColor(.kinGreen, for: .normal)
             amountButton.setTitleColor(.gray51, for: .disabled)
 
-            fillTitleLabel.backgroundColor = .kinGreen
+            fillContainerView.backgroundColor = .kinGreen
             fillTitleLabel.textColor = .white
         }
 
