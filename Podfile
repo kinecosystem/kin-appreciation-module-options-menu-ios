@@ -14,5 +14,6 @@ abstract_target 'Dependencies' do
 
   target 'KinAppreciationModuleOptionsMenuSampleApp' do
     project 'KinAppreciationModuleOptionsMenuSampleApp/KinAppreciationModuleOptionsMenuSampleApp' 
+    pod 'KinAppreciationModuleOptionsMenu', :path => './'
   end
 end
