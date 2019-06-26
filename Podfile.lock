@@ -1,11 +1,7 @@
 PODS:
   - KinAppreciationModuleOptionsMenu (0.0.1):
-    - KinSDK (~> 1.0.0)
-  - KinSDK (1.0.2):
-    - KinSDK/Core (= 1.0.2)
-    - KinUtil (= 0.1.0)
-    - Sodium (= 0.8.0)
-  - KinSDK/Core (1.0.2):
+    - KinSDK (= 0.9.0)
+  - KinSDK (0.9.0):
     - KinUtil (= 0.1.0)
     - Sodium (= 0.8.0)
   - KinUtil (0.1.0)
@@ -26,8 +22,8 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  KinAppreciationModuleOptionsMenu: 8c50b882c307a24055dd9dc1e5b6533be162c152
-  KinSDK: 5dfcf8353ceface126e3bb6912a1634677d83bea
+  KinAppreciationModuleOptionsMenu: ddbd4746e552657b9e9705b431cf4bfa1d16819f
+  KinSDK: 24cbb5cf8b560c6025eacabc1b5aebbe5938c141
   KinUtil: 5ba64858ba2f24156d6e229c963b37f8d808bd4c
   Sodium: 63c0ca312a932e6da481689537d4b35568841bdc
 
