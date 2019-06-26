@@ -7,16 +7,15 @@
 //
 
 import UIKit
-import KinSDK
 
 public protocol KinAppreciationViewControllerDelegate: NSObjectProtocol {
     func kinAppreciationViewControllerDidPresent(_ viewController: KinAppreciationViewController)
     func kinAppreciationViewController(_ viewController: KinAppreciationViewController, didDismissWith reason: KinAppreciationViewController.DismissReason)
-    func kinAppreciationViewController(_ viewController: KinAppreciationViewController, didSelect amount: Kin)
+    func kinAppreciationViewController(_ viewController: KinAppreciationViewController, didSelect amount: Decimal)
 }
 
 public class KinAppreciationViewController: UIViewController {
-    public private(set) var balance: Kin
+    public private(set) var balance: Decimal
     public let theme: Theme
 
     public weak var delegate: KinAppreciationViewControllerDelegate?
@@ -50,7 +49,7 @@ public class KinAppreciationViewController: UIViewController {
 
     // MARK: Lifecycle
 
-    public init(balance: Kin, theme: Theme) {
+    public init(balance: Decimal, theme: Theme) {
         self.balance = balance
         self.theme = theme
 

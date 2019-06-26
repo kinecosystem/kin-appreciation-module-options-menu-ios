@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import KinSDK
 import KinAppreciationModuleOptionsMenu
 
 class ViewController: UIViewController {
@@ -46,13 +45,13 @@ class ViewController: UIViewController {
     }
 
     @objc func lightAction(_ button: UIButton) {
-        let viewController = KinAppreciationViewController(balance: Kin(button.tag), theme: .light)
+        let viewController = KinAppreciationViewController(balance: Decimal(button.tag), theme: .light)
         viewController.delegate = self
         present(viewController, animated: true)
     }
 
     @objc func darkAction(_ button: UIButton) {
-        let viewController = KinAppreciationViewController(balance: Kin(button.tag), theme: .dark)
+        let viewController = KinAppreciationViewController(balance: Decimal(button.tag), theme: .dark)
         viewController.delegate = self
         present(viewController, animated: true)
     }
@@ -67,7 +66,7 @@ extension ViewController: KinAppreciationViewControllerDelegate {
 
     }
 
-    func kinAppreciationViewController(_ viewController: KinAppreciationViewController, didSelect amount: Kin) {
+    func kinAppreciationViewController(_ viewController: KinAppreciationViewController, didSelect amount: Decimal) {
 
     }
 }

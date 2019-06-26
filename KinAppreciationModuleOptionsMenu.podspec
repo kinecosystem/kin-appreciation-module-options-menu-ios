@@ -21,8 +21,6 @@ Pod::Spec.new do |s|
   s.source_files = root+'/**/*.{strings,swift}'
   s.resources    = root+'/**/*.{otf,xcassets}'
 
-  s.dependency 'KinSDK', '0.9.0'
-
   s.test_spec 'Tests' do |ts|
     ts.source_files = root+'Tests/*.swift'
   end

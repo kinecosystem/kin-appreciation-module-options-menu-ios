@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import KinSDK
 
 protocol KinButtonDelegate: NSObjectProtocol {
     func kinButtonDidFill(_ button: KinButton)
@@ -30,7 +29,7 @@ class KinButton: UIControl {
     private var titles: [UInt: String?] = [:]
     private var titleColors: [UInt: UIColor?] = [:]
 
-    var kin: Kin = 0 {
+    var kin: Decimal = 0 {
         didSet {
             amountButton.setTitle("\(kin)", for: .normal)
         }
