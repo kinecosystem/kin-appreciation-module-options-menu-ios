@@ -10,7 +10,7 @@ import UIKit
 
 public protocol KinAppreciationViewControllerDelegate: NSObjectProtocol {
     func kinAppreciationViewControllerDidPresent(_ viewController: KinAppreciationViewController)
-    func kinAppreciationViewController(_ viewController: KinAppreciationViewController, didDismissWith reason: KinAppreciationViewController.DismissReason)
+    func kinAppreciationViewController(_ viewController: KinAppreciationViewController, didDismissWith reason: KinAppreciationCancelReason)
     func kinAppreciationViewController(_ viewController: KinAppreciationViewController, didSelect amount: Decimal)
 }
 
@@ -27,7 +27,7 @@ public class KinAppreciationViewController: UIViewController {
 
     private var kButtons: [KinButton] = []
 
-    private var dismissalReason: DismissReason = .hostApplication
+    private var cancelReason: KinAppreciationCancelReason = .hostApplication
 
     // MARK: View
 
@@ -86,7 +86,7 @@ public class KinAppreciationViewController: UIViewController {
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        KinAppreciationBI.shared.delegate?.overlayViewed()
+        KinAppreciationBI.shared.delegate?.kinAppreciationDidAppear()
 
         delegate?.kinAppreciationViewControllerDidPresent(self)
     }
@@ -94,9 +94,9 @@ public class KinAppreciationViewController: UIViewController {
     public override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
-        KinAppreciationBI.shared.delegate?.closed(reason: dismissalReason.biMap)
+        KinAppreciationBI.shared.delegate?.kinAppreciationDidCancel(reason: cancelReason)
 
-        delegate?.kinAppreciationViewController(self, didDismissWith: dismissalReason)
+        delegate?.kinAppreciationViewController(self, didDismissWith: cancelReason)
     }
 
     // MARK: Convenience
@@ -118,11 +118,9 @@ extension KinAppreciationViewController {
             return
         }
 
-        button.isSelected = true
+        KinAppreciationBI.shared.delegate?.kinAppreciationDidSelect(amount: button.kin)
 
-        if let type = kButtonToBIMap(button: button) {
-            KinAppreciationBI.shared.delegate?.buttonSelected(type: type)
-        }
+        button.isSelected = true
 
         for kButton in kButtons {
             if kButton != button {
@@ -138,7 +136,7 @@ extension KinAppreciationViewController {
             return
         }
         
-        dismissalReason = .closeButton
+        cancelReason = .closeButton
 
         presentingViewController?.dismiss(animated: true)
     }
@@ -148,7 +146,7 @@ extension KinAppreciationViewController {
             return
         }
 
-        dismissalReason = .touchOutside
+        cancelReason = .touchOutside
 
         presentingViewController?.dismiss(animated: true)
     }
@@ -203,57 +201,9 @@ extension KinAppreciationViewController: ConfettiViewDelegate {
                 return
             }
 
-            strongSelf.dismissalReason = .itemSelected
+            strongSelf.biDelegate?.kinAppreciationDidComplete()
 
             strongSelf.presentingViewController?.dismiss(animated: true)
         }
     }
-}
-
-// MARK: - Dismiss Reason
-
-extension KinAppreciationViewController {
-    public enum DismissReason {
-        case closeButton
-        case touchOutside
-        case itemSelected
-        case hostApplication
-    }
-}
-
-extension KinAppreciationViewController.DismissReason {
-    var biMap: KinDismissalReason {
-        switch self {
-        case .closeButton:
-            return .xButton
-        case .touchOutside:
-            return .backgroundTap
-        case .itemSelected:
-            return .timeout
-        case .hostApplication:
-            return .hostApp
-        }
-    }
-}
-
-// MARK: - BI
-
-extension KinAppreciationViewController {
-    private func kButtonToBIMap(button: KinButton) -> KinButtonType? {
-        if button.kin == 1 {
-            return .k1
-        }
-        else if button.kin == 5 {
-            return .k5
-        }
-        else if button.kin == 10 {
-            return .k10
-        }
-        else if button.kin == 20 {
-            return .k20
-        }
-
-        return nil
-    }
-
 }

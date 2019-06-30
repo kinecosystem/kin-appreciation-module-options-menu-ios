@@ -62,7 +62,7 @@ extension ViewController: KinAppreciationViewControllerDelegate {
 
     }
 
-    func kinAppreciationViewController(_ viewController: KinAppreciationViewController, didDismissWith reason: KinAppreciationViewController.DismissReason) {
+    func kinAppreciationViewController(_ viewController: KinAppreciationViewController, didDismissWith reason: KinAppreciationCancelReason) {
 
     }
 

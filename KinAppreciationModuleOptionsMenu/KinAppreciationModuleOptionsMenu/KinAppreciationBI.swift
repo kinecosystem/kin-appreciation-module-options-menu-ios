@@ -8,24 +8,11 @@
 
 import Foundation
 
-public enum KinButtonType {
-    case k1
-    case k5
-    case k10
-    case k20
-}
-
-public enum KinDismissalReason {
-    case xButton
-    case backgroundTap
-    case timeout
-    case hostApp
-}
-
 public protocol KinAppreciationBIDelegate: NSObjectProtocol {
-    func overlayViewed()
-    func buttonSelected(type: KinButtonType)
-    func closed(reason: KinDismissalReason)
+    func kinAppreciationDidAppear()
+    func kinAppreciationDidSelect(amount: Decimal)
+    func kinAppreciationDidCancel(reason: KinAppreciationCancelReason)
+    func kinAppreciationDidComplete()
 }
 
 class KinAppreciationBI {
