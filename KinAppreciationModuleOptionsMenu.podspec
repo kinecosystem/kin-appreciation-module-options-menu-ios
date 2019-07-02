@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.author            = { 'Kin Foundation' => 'info@kin.org' }
   s.summary           = 'Appreciation module pod for the Kin SDK.'
   s.homepage          = 'https://github.com/kinecosystem/kin-appreciation-module-options-menu-ios'
-  # s.documentation_url = 'https://kinecosystem.github.io/kin-website-docs/docs/'
+  s.documentation_url = 'https://kinecosystem.github.io/kin-website-docs/docs/documentation/appreciation-module-options-menu-ios'
   s.social_media_url  = 'https://twitter.com/kin_foundation'
   
   s.platform      = :ios, '9.0'
