@@ -105,7 +105,7 @@ class KinAppreciationView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
 
-        var verticalInset = Int(layoutMargins.top) > 0 ? layoutMargins.top : layoutMargins.left
+        let verticalInset = Int(layoutMargins.top) > 0 ? layoutMargins.top : layoutMargins.left
 
         var contentEdgeInsets = closeButton.contentEdgeInsets
         contentEdgeInsets.top = verticalInset
