@@ -1,648 +1,644 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 50;
-	objects = {
+archiveVersion = 1;
+classes = {
+};
+objectVersion = 50;
+objects = {
 
 /* Begin PBXBuildFile section */
-		3EB6869844442338CA61E370 /* Pods_KinAppreciationModuleOptionsMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8119EF5F471FA1A75249DF /* Pods_KinAppreciationModuleOptionsMenu.framework */; };
-		68AF950422B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AF94FA22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework */; };
-		68AF950922B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF950822B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.swift */; };
-		68AF950B22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 68AF94FD22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68AF955B22B7A1A6008C01EC /* KinAppreciationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF955A22B7A1A6008C01EC /* KinAppreciationViewController.swift */; };
-		68AF95F522B9E12F008C01EC /* KinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF95F422B9E12F008C01EC /* KinButton.swift */; };
-		68AF95F722B9E1EB008C01EC /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF95F622B9E1EB008C01EC /* Appearance.swift */; };
-		68AF95F922BA1C48008C01EC /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF95F822BA1C48008C01EC /* PresentationController.swift */; };
-		68AF95FB22BA1CC4008C01EC /* AnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF95FA22BA1CC4008C01EC /* AnimatedTransitioning.swift */; };
-		68AF95FD22BA2122008C01EC /* KinAppreciationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF95FC22BA2122008C01EC /* KinAppreciationView.swift */; };
-		68AF95FF22BA4055008C01EC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68AF95FE22BA4055008C01EC /* Localizable.strings */; };
-		68AF960122BA4094008C01EC /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960022BA4094008C01EC /* String+Localization.swift */; };
-		68AF960422BA40E6008C01EC /* Bundle+Appreciation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960322BA40E6008C01EC /* Bundle+Appreciation.swift */; };
-		68AF960822BA61F3008C01EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68AF960722BA61F3008C01EC /* Assets.xcassets */; };
-		68AF960C22BB5F9B008C01EC /* KinAmountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960B22BB5F9B008C01EC /* KinAmountButton.swift */; };
-		68AF960E22BB792D008C01EC /* KinAppreciationBI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960D22BB792D008C01EC /* KinAppreciationBI.swift */; };
-		68AF961022BB852A008C01EC /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960F22BB852A008C01EC /* ConfettiView.swift */; };
-		68AF961422BF7ED6008C01EC /* Sailec.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68AF961222BF7ED6008C01EC /* Sailec.otf */; };
-		68AF961522BF7ED6008C01EC /* SailecMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68AF961322BF7ED6008C01EC /* SailecMedium.otf */; };
-		68AF963B22C0A74C008C01EC /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF963A22C0A74C008C01EC /* UIFont+Custom.swift */; };
-		68EA4BAA22C8EB28003FCF08 /* KinAppreciationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA4BA922C8EB28003FCF08 /* KinAppreciationTypes.swift */; };
-		7794CC00E6C47CDD786A4886 /* Pods_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933EA839187C55489A2C631C /* Pods_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework */; };
+3EB6869844442338CA61E370 /* Pods_KinAppreciationModuleOptionsMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8119EF5F471FA1A75249DF /* Pods_KinAppreciationModuleOptionsMenu.framework */; };
+68AF950422B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AF94FA22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework */; };
+68AF950922B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF950822B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.swift */; };
+68AF950B22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 68AF94FD22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+68AF955B22B7A1A6008C01EC /* KinAppreciationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF955A22B7A1A6008C01EC /* KinAppreciationViewController.swift */; };
+68AF95F522B9E12F008C01EC /* KinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF95F422B9E12F008C01EC /* KinButton.swift */; };
+68AF95F722B9E1EB008C01EC /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF95F622B9E1EB008C01EC /* Appearance.swift */; };
+68AF95F922BA1C48008C01EC /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF95F822BA1C48008C01EC /* PresentationController.swift */; };
+68AF95FB22BA1CC4008C01EC /* AnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF95FA22BA1CC4008C01EC /* AnimatedTransitioning.swift */; };
+68AF95FD22BA2122008C01EC /* KinAppreciationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF95FC22BA2122008C01EC /* KinAppreciationView.swift */; };
+68AF95FF22BA4055008C01EC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68AF95FE22BA4055008C01EC /* Localizable.strings */; };
+68AF960122BA4094008C01EC /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960022BA4094008C01EC /* String+Localization.swift */; };
+68AF960422BA40E6008C01EC /* Bundle+Appreciation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960322BA40E6008C01EC /* Bundle+Appreciation.swift */; };
+68AF960822BA61F3008C01EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68AF960722BA61F3008C01EC /* Assets.xcassets */; };
+68AF960C22BB5F9B008C01EC /* KinAmountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960B22BB5F9B008C01EC /* KinAmountButton.swift */; };
+68AF960E22BB792D008C01EC /* KinAppreciationBI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960D22BB792D008C01EC /* KinAppreciationBI.swift */; };
+68AF961022BB852A008C01EC /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF960F22BB852A008C01EC /* ConfettiView.swift */; };
+68AF961422BF7ED6008C01EC /* Sailec.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68AF961222BF7ED6008C01EC /* Sailec.otf */; };
+68AF961522BF7ED6008C01EC /* SailecMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68AF961322BF7ED6008C01EC /* SailecMedium.otf */; };
+68AF963B22C0A74C008C01EC /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF963A22C0A74C008C01EC /* UIFont+Custom.swift */; };
+68EA4BAA22C8EB28003FCF08 /* KinAppreciationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA4BA922C8EB28003FCF08 /* KinAppreciationTypes.swift */; };
+7794CC00E6C47CDD786A4886 /* Pods_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933EA839187C55489A2C631C /* Pods_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		68AF950522B79AED008C01EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 68AF94F122B79AED008C01EC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 68AF94F922B79AED008C01EC;
-			remoteInfo = KinAppreciationModuleOptionsMenu;
-		};
+68AF950522B79AED008C01EC /* PBXContainerItemProxy */ = {
+isa = PBXContainerItemProxy;
+containerPortal = 68AF94F122B79AED008C01EC /* Project object */;
+proxyType = 1;
+remoteGlobalIDString = 68AF94F922B79AED008C01EC;
+remoteInfo = KinAppreciationModuleOptionsMenu;
+};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		021FA6B856D3CEBF7C104990 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu.debug.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu/Pods-Dependencies-KinAppreciationModuleOptionsMenu.debug.xcconfig"; sourceTree = "<group>"; };
-		0B4A8CFF8CA022DCCB177075 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
-		0BE7336BA60F7CD5C68A20F9 /* Pods-KinAppreciationModuleOptionsMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu.release.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu/Pods-KinAppreciationModuleOptionsMenu.release.xcconfig"; sourceTree = "<group>"; };
-		2C8119EF5F471FA1A75249DF /* Pods_KinAppreciationModuleOptionsMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinAppreciationModuleOptionsMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A90338FEC82AF48159966BC /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
-		68AF94FA22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KinAppreciationModuleOptionsMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		68AF94FD22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KinAppreciationModuleOptionsMenu.h; sourceTree = "<group>"; };
-		68AF94FE22B79AED008C01EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68AF950322B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinAppreciationModuleOptionsMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		68AF950822B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinAppreciationModuleOptionsMenuTests.swift; sourceTree = "<group>"; };
-		68AF950A22B79AED008C01EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68AF955A22B7A1A6008C01EC /* KinAppreciationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinAppreciationViewController.swift; sourceTree = "<group>"; };
-		68AF95F422B9E12F008C01EC /* KinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinButton.swift; sourceTree = "<group>"; };
-		68AF95F622B9E1EB008C01EC /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
-		68AF95F822BA1C48008C01EC /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
-		68AF95FA22BA1CC4008C01EC /* AnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioning.swift; sourceTree = "<group>"; };
-		68AF95FC22BA2122008C01EC /* KinAppreciationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinAppreciationView.swift; sourceTree = "<group>"; };
-		68AF95FE22BA4055008C01EC /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		68AF960022BA4094008C01EC /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
-		68AF960322BA40E6008C01EC /* Bundle+Appreciation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Appreciation.swift"; sourceTree = "<group>"; };
-		68AF960722BA61F3008C01EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		68AF960B22BB5F9B008C01EC /* KinAmountButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KinAmountButton.swift; sourceTree = "<group>"; };
-		68AF960D22BB792D008C01EC /* KinAppreciationBI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinAppreciationBI.swift; sourceTree = "<group>"; };
-		68AF960F22BB852A008C01EC /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
-		68AF961222BF7ED6008C01EC /* Sailec.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sailec.otf; sourceTree = "<group>"; };
-		68AF961322BF7ED6008C01EC /* SailecMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SailecMedium.otf; sourceTree = "<group>"; };
-		68AF963A22C0A74C008C01EC /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
-		68EA4BA922C8EB28003FCF08 /* KinAppreciationTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinAppreciationTypes.swift; sourceTree = "<group>"; };
-		8EC4BCA91EBB6D546B21DD3C /* Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenuTests/Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9217BCEB3C3B04E724DCB930 /* Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
-		933EA839187C55489A2C631C /* Pods_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		993AFF2C8475D552DF06FCCD /* Pods-KinAppreciationModuleOptionsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenuTests/Pods-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
-		B68C89681EE917107EEF651E /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D39399D1B0ADB88CA7D9B320 /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
-		F48CB93AFE6AAAE78B0CCDC6 /* Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu/Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig"; sourceTree = "<group>"; };
-		FAB019A4DF19CF1102A28507 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu/Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig"; sourceTree = "<group>"; };
-		FBB7334E6522ABD09304336C /* Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
+021FA6B856D3CEBF7C104990 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu.debug.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu/Pods-Dependencies-KinAppreciationModuleOptionsMenu.debug.xcconfig"; sourceTree = "<group>"; };
+0B4A8CFF8CA022DCCB177075 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
+0BE7336BA60F7CD5C68A20F9 /* Pods-KinAppreciationModuleOptionsMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu.release.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu/Pods-KinAppreciationModuleOptionsMenu.release.xcconfig"; sourceTree = "<group>"; };
+2C8119EF5F471FA1A75249DF /* Pods_KinAppreciationModuleOptionsMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinAppreciationModuleOptionsMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+4A90338FEC82AF48159966BC /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
+68AF94FA22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KinAppreciationModuleOptionsMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+68AF94FD22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KinAppreciationModuleOptionsMenu.h; sourceTree = "<group>"; };
+68AF94FE22B79AED008C01EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+68AF950322B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinAppreciationModuleOptionsMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+68AF950822B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinAppreciationModuleOptionsMenuTests.swift; sourceTree = "<group>"; };
+68AF950A22B79AED008C01EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+68AF955A22B7A1A6008C01EC /* KinAppreciationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinAppreciationViewController.swift; sourceTree = "<group>"; };
+68AF95F422B9E12F008C01EC /* KinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinButton.swift; sourceTree = "<group>"; };
+68AF95F622B9E1EB008C01EC /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+68AF95F822BA1C48008C01EC /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+68AF95FA22BA1CC4008C01EC /* AnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioning.swift; sourceTree = "<group>"; };
+68AF95FC22BA2122008C01EC /* KinAppreciationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinAppreciationView.swift; sourceTree = "<group>"; };
+68AF95FE22BA4055008C01EC /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+68AF960022BA4094008C01EC /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+68AF960322BA40E6008C01EC /* Bundle+Appreciation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Appreciation.swift"; sourceTree = "<group>"; };
+68AF960722BA61F3008C01EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+68AF960B22BB5F9B008C01EC /* KinAmountButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KinAmountButton.swift; sourceTree = "<group>"; };
+68AF960D22BB792D008C01EC /* KinAppreciationBI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinAppreciationBI.swift; sourceTree = "<group>"; };
+68AF960F22BB852A008C01EC /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
+68AF961222BF7ED6008C01EC /* Sailec.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sailec.otf; sourceTree = "<group>"; };
+68AF961322BF7ED6008C01EC /* SailecMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SailecMedium.otf; sourceTree = "<group>"; };
+68AF963A22C0A74C008C01EC /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
+68EA4BA922C8EB28003FCF08 /* KinAppreciationTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinAppreciationTypes.swift; sourceTree = "<group>"; };
+8EC4BCA91EBB6D546B21DD3C /* Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenuTests/Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
+9217BCEB3C3B04E724DCB930 /* Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
+933EA839187C55489A2C631C /* Pods_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+993AFF2C8475D552DF06FCCD /* Pods-KinAppreciationModuleOptionsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenuTests/Pods-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
+B68C89681EE917107EEF651E /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
+D39399D1B0ADB88CA7D9B320 /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
+F48CB93AFE6AAAE78B0CCDC6 /* Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig"; path = "Target Support Files/Pods-KinAppreciationModuleOptionsMenu/Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig"; sourceTree = "<group>"; };
+FAB019A4DF19CF1102A28507 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenu/Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig"; sourceTree = "<group>"; };
+FBB7334E6522ABD09304336C /* Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests/Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		68AF94F722B79AED008C01EC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3EB6869844442338CA61E370 /* Pods_KinAppreciationModuleOptionsMenu.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68AF950022B79AED008C01EC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68AF950422B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework in Frameworks */,
-				7794CC00E6C47CDD786A4886 /* Pods_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+68AF94F722B79AED008C01EC /* Frameworks */ = {
+isa = PBXFrameworksBuildPhase;
+buildActionMask = 2147483647;
+files = (
+3EB6869844442338CA61E370 /* Pods_KinAppreciationModuleOptionsMenu.framework in Frameworks */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+68AF950022B79AED008C01EC /* Frameworks */ = {
+isa = PBXFrameworksBuildPhase;
+buildActionMask = 2147483647;
+files = (
+68AF950422B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework in Frameworks */,
+7794CC00E6C47CDD786A4886 /* Pods_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework in Frameworks */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		68AF94F022B79AED008C01EC = {
-			isa = PBXGroup;
-			children = (
-				68AF94FC22B79AED008C01EC /* KinAppreciationModuleOptionsMenu */,
-				68AF950722B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests */,
-				68AF94FB22B79AED008C01EC /* Products */,
-				ACB445AD7399F8C1CB1BF541 /* Pods */,
-				7DED4E0723E482AD57B6D3D7 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		68AF94FB22B79AED008C01EC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				68AF94FA22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework */,
-				68AF950322B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		68AF94FC22B79AED008C01EC /* KinAppreciationModuleOptionsMenu */ = {
-			isa = PBXGroup;
-			children = (
-				68AF961122BF7EC3008C01EC /* Fonts */,
-				68AF960722BA61F3008C01EC /* Assets.xcassets */,
-				68AF960222BA40A0008C01EC /* Extensions */,
-				68AF95FA22BA1CC4008C01EC /* AnimatedTransitioning.swift */,
-				68AF95F622B9E1EB008C01EC /* Appearance.swift */,
-				68AF960F22BB852A008C01EC /* ConfettiView.swift */,
-				68AF94FE22B79AED008C01EC /* Info.plist */,
-				68AF960B22BB5F9B008C01EC /* KinAmountButton.swift */,
-				68AF960D22BB792D008C01EC /* KinAppreciationBI.swift */,
-				68AF94FD22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h */,
-				68EA4BA922C8EB28003FCF08 /* KinAppreciationTypes.swift */,
-				68AF95FC22BA2122008C01EC /* KinAppreciationView.swift */,
-				68AF955A22B7A1A6008C01EC /* KinAppreciationViewController.swift */,
-				68AF95F422B9E12F008C01EC /* KinButton.swift */,
-				68AF95FE22BA4055008C01EC /* Localizable.strings */,
-				68AF95F822BA1C48008C01EC /* PresentationController.swift */,
-			);
-			path = KinAppreciationModuleOptionsMenu;
-			sourceTree = "<group>";
-		};
-		68AF950722B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests */ = {
-			isa = PBXGroup;
-			children = (
-				68AF950822B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.swift */,
-				68AF950A22B79AED008C01EC /* Info.plist */,
-			);
-			path = KinAppreciationModuleOptionsMenuTests;
-			sourceTree = "<group>";
-		};
-		68AF960222BA40A0008C01EC /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				68AF960022BA4094008C01EC /* String+Localization.swift */,
-				68AF960322BA40E6008C01EC /* Bundle+Appreciation.swift */,
-				68AF963A22C0A74C008C01EC /* UIFont+Custom.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		68AF961122BF7EC3008C01EC /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				68AF961222BF7ED6008C01EC /* Sailec.otf */,
-				68AF961322BF7ED6008C01EC /* SailecMedium.otf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		7DED4E0723E482AD57B6D3D7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2C8119EF5F471FA1A75249DF /* Pods_KinAppreciationModuleOptionsMenu.framework */,
-				933EA839187C55489A2C631C /* Pods_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		ACB445AD7399F8C1CB1BF541 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				021FA6B856D3CEBF7C104990 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu.debug.xcconfig */,
-				FAB019A4DF19CF1102A28507 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig */,
-				FBB7334E6522ABD09304336C /* Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */,
-				9217BCEB3C3B04E724DCB930 /* Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig */,
-				F48CB93AFE6AAAE78B0CCDC6 /* Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig */,
-				0BE7336BA60F7CD5C68A20F9 /* Pods-KinAppreciationModuleOptionsMenu.release.xcconfig */,
-				8EC4BCA91EBB6D546B21DD3C /* Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */,
-				993AFF2C8475D552DF06FCCD /* Pods-KinAppreciationModuleOptionsMenuTests.release.xcconfig */,
-				4A90338FEC82AF48159966BC /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */,
-				D39399D1B0ADB88CA7D9B320 /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */,
-				B68C89681EE917107EEF651E /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */,
-				0B4A8CFF8CA022DCCB177075 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
+68AF94F022B79AED008C01EC = {
+isa = PBXGroup;
+children = (
+68AF94FC22B79AED008C01EC /* KinAppreciationModuleOptionsMenu */,
+68AF950722B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests */,
+68AF94FB22B79AED008C01EC /* Products */,
+ACB445AD7399F8C1CB1BF541 /* Pods */,
+7DED4E0723E482AD57B6D3D7 /* Frameworks */,
+);
+sourceTree = "<group>";
+};
+68AF94FB22B79AED008C01EC /* Products */ = {
+isa = PBXGroup;
+children = (
+68AF94FA22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework */,
+68AF950322B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.xctest */,
+);
+name = Products;
+sourceTree = "<group>";
+};
+68AF94FC22B79AED008C01EC /* KinAppreciationModuleOptionsMenu */ = {
+isa = PBXGroup;
+children = (
+68AF961122BF7EC3008C01EC /* Fonts */,
+68AF960722BA61F3008C01EC /* Assets.xcassets */,
+68AF960222BA40A0008C01EC /* Extensions */,
+68AF95FA22BA1CC4008C01EC /* AnimatedTransitioning.swift */,
+68AF95F622B9E1EB008C01EC /* Appearance.swift */,
+68AF960F22BB852A008C01EC /* ConfettiView.swift */,
+68AF94FE22B79AED008C01EC /* Info.plist */,
+68AF960B22BB5F9B008C01EC /* KinAmountButton.swift */,
+68AF960D22BB792D008C01EC /* KinAppreciationBI.swift */,
+68AF94FD22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h */,
+68EA4BA922C8EB28003FCF08 /* KinAppreciationTypes.swift */,
+68AF95FC22BA2122008C01EC /* KinAppreciationView.swift */,
+68AF955A22B7A1A6008C01EC /* KinAppreciationViewController.swift */,
+68AF95F422B9E12F008C01EC /* KinButton.swift */,
+68AF95FE22BA4055008C01EC /* Localizable.strings */,
+68AF95F822BA1C48008C01EC /* PresentationController.swift */,
+);
+path = KinAppreciationModuleOptionsMenu;
+sourceTree = "<group>";
+};
+68AF950722B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests */ = {
+isa = PBXGroup;
+children = (
+68AF950822B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.swift */,
+68AF950A22B79AED008C01EC /* Info.plist */,
+);
+path = KinAppreciationModuleOptionsMenuTests;
+sourceTree = "<group>";
+};
+68AF960222BA40A0008C01EC /* Extensions */ = {
+isa = PBXGroup;
+children = (
+68AF960022BA4094008C01EC /* String+Localization.swift */,
+68AF960322BA40E6008C01EC /* Bundle+Appreciation.swift */,
+68AF963A22C0A74C008C01EC /* UIFont+Custom.swift */,
+);
+path = Extensions;
+sourceTree = "<group>";
+};
+68AF961122BF7EC3008C01EC /* Fonts */ = {
+isa = PBXGroup;
+children = (
+68AF961222BF7ED6008C01EC /* Sailec.otf */,
+68AF961322BF7ED6008C01EC /* SailecMedium.otf */,
+);
+path = Fonts;
+sourceTree = "<group>";
+};
+7DED4E0723E482AD57B6D3D7 /* Frameworks */ = {
+isa = PBXGroup;
+children = (
+2C8119EF5F471FA1A75249DF /* Pods_KinAppreciationModuleOptionsMenu.framework */,
+933EA839187C55489A2C631C /* Pods_KinAppreciationModuleOptionsMenu_KinAppreciationModuleOptionsMenuTests.framework */,
+);
+name = Frameworks;
+sourceTree = "<group>";
+};
+ACB445AD7399F8C1CB1BF541 /* Pods */ = {
+isa = PBXGroup;
+children = (
+021FA6B856D3CEBF7C104990 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu.debug.xcconfig */,
+FAB019A4DF19CF1102A28507 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu.release.xcconfig */,
+FBB7334E6522ABD09304336C /* Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */,
+9217BCEB3C3B04E724DCB930 /* Pods-Dependencies-KinAppreciationModuleOptionsMenuTests.release.xcconfig */,
+F48CB93AFE6AAAE78B0CCDC6 /* Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig */,
+0BE7336BA60F7CD5C68A20F9 /* Pods-KinAppreciationModuleOptionsMenu.release.xcconfig */,
+8EC4BCA91EBB6D546B21DD3C /* Pods-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */,
+993AFF2C8475D552DF06FCCD /* Pods-KinAppreciationModuleOptionsMenuTests.release.xcconfig */,
+4A90338FEC82AF48159966BC /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */,
+D39399D1B0ADB88CA7D9B320 /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */,
+B68C89681EE917107EEF651E /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */,
+0B4A8CFF8CA022DCCB177075 /* Pods-Dependencies-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */,
+);
+name = Pods;
+path = ../Pods;
+sourceTree = "<group>";
+};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		68AF94F522B79AED008C01EC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68AF950B22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+68AF94F522B79AED008C01EC /* Headers */ = {
+isa = PBXHeadersBuildPhase;
+buildActionMask = 2147483647;
+files = (
+68AF950B22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.h in Headers */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		68AF94F922B79AED008C01EC /* KinAppreciationModuleOptionsMenu */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 68AF950E22B79AED008C01EC /* Build configuration list for PBXNativeTarget "KinAppreciationModuleOptionsMenu" */;
-			buildPhases = (
-				17DC2217CDD2D7F84B8CCC24 /* [CP] Check Pods Manifest.lock */,
-				68AF94F522B79AED008C01EC /* Headers */,
-				68AF94F622B79AED008C01EC /* Sources */,
-				68AF94F722B79AED008C01EC /* Frameworks */,
-				68AF94F822B79AED008C01EC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KinAppreciationModuleOptionsMenu;
-			productName = KinAppreciationModuleOptionsMenu;
-			productReference = 68AF94FA22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		68AF950222B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 68AF951122B79AED008C01EC /* Build configuration list for PBXNativeTarget "KinAppreciationModuleOptionsMenuTests" */;
-			buildPhases = (
-				EFA5D74464CEC210177C455E /* [CP] Check Pods Manifest.lock */,
-				68AF94FF22B79AED008C01EC /* Sources */,
-				68AF950022B79AED008C01EC /* Frameworks */,
-				68AF950122B79AED008C01EC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				68AF950622B79AED008C01EC /* PBXTargetDependency */,
-			);
-			name = KinAppreciationModuleOptionsMenuTests;
-			productName = KinAppreciationModuleOptionsMenuTests;
-			productReference = 68AF950322B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
+68AF94F922B79AED008C01EC /* KinAppreciationModuleOptionsMenu */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = 68AF950E22B79AED008C01EC /* Build configuration list for PBXNativeTarget "KinAppreciationModuleOptionsMenu" */;
+buildPhases = (
+17DC2217CDD2D7F84B8CCC24 /* [CP] Check Pods Manifest.lock */,
+68AF94F522B79AED008C01EC /* Headers */,
+68AF94F622B79AED008C01EC /* Sources */,
+68AF94F722B79AED008C01EC /* Frameworks */,
+68AF94F822B79AED008C01EC /* Resources */,
+);
+buildRules = (
+);
+dependencies = (
+);
+name = KinAppreciationModuleOptionsMenu;
+productName = KinAppreciationModuleOptionsMenu;
+productReference = 68AF94FA22B79AED008C01EC /* KinAppreciationModuleOptionsMenu.framework */;
+productType = "com.apple.product-type.framework";
+};
+68AF950222B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = 68AF951122B79AED008C01EC /* Build configuration list for PBXNativeTarget "KinAppreciationModuleOptionsMenuTests" */;
+buildPhases = (
+EFA5D74464CEC210177C455E /* [CP] Check Pods Manifest.lock */,
+68AF94FF22B79AED008C01EC /* Sources */,
+68AF950022B79AED008C01EC /* Frameworks */,
+68AF950122B79AED008C01EC /* Resources */,
+);
+buildRules = (
+);
+dependencies = (
+68AF950622B79AED008C01EC /* PBXTargetDependency */,
+);
+name = KinAppreciationModuleOptionsMenuTests;
+productName = KinAppreciationModuleOptionsMenuTests;
+productReference = 68AF950322B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.xctest */;
+productType = "com.apple.product-type.bundle.unit-test";
+};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		68AF94F122B79AED008C01EC /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = "Kin Foundation";
-				TargetAttributes = {
-					68AF94F922B79AED008C01EC = {
-						CreatedOnToolsVersion = 10.2.1;
-						LastSwiftMigration = 1020;
-					};
-					68AF950222B79AED008C01EC = {
-						CreatedOnToolsVersion = 10.2.1;
-					};
-				};
-			};
-			buildConfigurationList = 68AF94F422B79AED008C01EC /* Build configuration list for PBXProject "KinAppreciationModuleOptionsMenu" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 68AF94F022B79AED008C01EC;
-			productRefGroup = 68AF94FB22B79AED008C01EC /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				68AF94F922B79AED008C01EC /* KinAppreciationModuleOptionsMenu */,
-				68AF950222B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests */,
-			);
-		};
+68AF94F122B79AED008C01EC /* Project object */ = {
+isa = PBXProject;
+attributes = {
+LastSwiftUpdateCheck = 1020;
+LastUpgradeCheck = 1020;
+ORGANIZATIONNAME = "Kin Foundation";
+TargetAttributes = {
+68AF94F922B79AED008C01EC = {
+CreatedOnToolsVersion = 10.2.1;
+LastSwiftMigration = 1020;
+};
+68AF950222B79AED008C01EC = {
+CreatedOnToolsVersion = 10.2.1;
+};
+};
+};
+buildConfigurationList = 68AF94F422B79AED008C01EC /* Build configuration list for PBXProject "KinAppreciationModuleOptionsMenu" */;
+compatibilityVersion = "Xcode 9.3";
+developmentRegion = en;
+hasScannedForEncodings = 0;
+knownRegions = (
+en,
+);
+mainGroup = 68AF94F022B79AED008C01EC;
+productRefGroup = 68AF94FB22B79AED008C01EC /* Products */;
+projectDirPath = "";
+projectRoot = "";
+targets = (
+68AF94F922B79AED008C01EC /* KinAppreciationModuleOptionsMenu */,
+68AF950222B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests */,
+);
+};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		68AF94F822B79AED008C01EC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68AF961422BF7ED6008C01EC /* Sailec.otf in Resources */,
-				68AF961522BF7ED6008C01EC /* SailecMedium.otf in Resources */,
-				68AF960822BA61F3008C01EC /* Assets.xcassets in Resources */,
-				68AF95FF22BA4055008C01EC /* Localizable.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68AF950122B79AED008C01EC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+68AF94F822B79AED008C01EC /* Resources */ = {
+isa = PBXResourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+68AF961422BF7ED6008C01EC /* Sailec.otf in Resources */,
+68AF961522BF7ED6008C01EC /* SailecMedium.otf in Resources */,
+68AF960822BA61F3008C01EC /* Assets.xcassets in Resources */,
+68AF95FF22BA4055008C01EC /* Localizable.strings in Resources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+68AF950122B79AED008C01EC /* Resources */ = {
+isa = PBXResourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		17DC2217CDD2D7F84B8CCC24 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KinAppreciationModuleOptionsMenu-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EFA5D74464CEC210177C455E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
+17DC2217CDD2D7F84B8CCC24 /* [CP] Check Pods Manifest.lock */ = {
+isa = PBXShellScriptBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+inputFileListPaths = (
+);
+inputPaths = (
+"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+"${PODS_ROOT}/Manifest.lock",
+);
+name = "[CP] Check Pods Manifest.lock";
+outputFileListPaths = (
+);
+outputPaths = (
+"$(DERIVED_FILE_DIR)/Pods-KinAppreciationModuleOptionsMenu-checkManifestLockResult.txt",
+);
+runOnlyForDeploymentPostprocessing = 0;
+shellPath = /bin/sh;
+shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+showEnvVarsInLog = 0;
+};
+EFA5D74464CEC210177C455E /* [CP] Check Pods Manifest.lock */ = {
+isa = PBXShellScriptBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+inputFileListPaths = (
+);
+inputPaths = (
+"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+"${PODS_ROOT}/Manifest.lock",
+);
+name = "[CP] Check Pods Manifest.lock";
+outputFileListPaths = (
+);
+outputPaths = (
+"$(DERIVED_FILE_DIR)/Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests-checkManifestLockResult.txt",
+);
+runOnlyForDeploymentPostprocessing = 0;
+shellPath = /bin/sh;
+shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+showEnvVarsInLog = 0;
+};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		68AF94F622B79AED008C01EC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68AF961022BB852A008C01EC /* ConfettiView.swift in Sources */,
-				68AF960422BA40E6008C01EC /* Bundle+Appreciation.swift in Sources */,
-				68AF95FD22BA2122008C01EC /* KinAppreciationView.swift in Sources */,
-				68AF955B22B7A1A6008C01EC /* KinAppreciationViewController.swift in Sources */,
-				68AF95F722B9E1EB008C01EC /* Appearance.swift in Sources */,
-				68AF963B22C0A74C008C01EC /* UIFont+Custom.swift in Sources */,
-				68AF960C22BB5F9B008C01EC /* KinAmountButton.swift in Sources */,
-				68EA4BAA22C8EB28003FCF08 /* KinAppreciationTypes.swift in Sources */,
-				68AF960E22BB792D008C01EC /* KinAppreciationBI.swift in Sources */,
-				68AF95F522B9E12F008C01EC /* KinButton.swift in Sources */,
-				68AF95FB22BA1CC4008C01EC /* AnimatedTransitioning.swift in Sources */,
-				68AF960122BA4094008C01EC /* String+Localization.swift in Sources */,
-				68AF95F922BA1C48008C01EC /* PresentationController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68AF94FF22B79AED008C01EC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68AF950922B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+68AF94F622B79AED008C01EC /* Sources */ = {
+isa = PBXSourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+68AF961022BB852A008C01EC /* ConfettiView.swift in Sources */,
+68AF960422BA40E6008C01EC /* Bundle+Appreciation.swift in Sources */,
+68AF95FD22BA2122008C01EC /* KinAppreciationView.swift in Sources */,
+68AF955B22B7A1A6008C01EC /* KinAppreciationViewController.swift in Sources */,
+68AF95F722B9E1EB008C01EC /* Appearance.swift in Sources */,
+68AF963B22C0A74C008C01EC /* UIFont+Custom.swift in Sources */,
+68AF960C22BB5F9B008C01EC /* KinAmountButton.swift in Sources */,
+68EA4BAA22C8EB28003FCF08 /* KinAppreciationTypes.swift in Sources */,
+68AF960E22BB792D008C01EC /* KinAppreciationBI.swift in Sources */,
+68AF95F522B9E12F008C01EC /* KinButton.swift in Sources */,
+68AF95FB22BA1CC4008C01EC /* AnimatedTransitioning.swift in Sources */,
+68AF960122BA4094008C01EC /* String+Localization.swift in Sources */,
+68AF95F922BA1C48008C01EC /* PresentationController.swift in Sources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+68AF94FF22B79AED008C01EC /* Sources */ = {
+isa = PBXSourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+68AF950922B79AED008C01EC /* KinAppreciationModuleOptionsMenuTests.swift in Sources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		68AF950622B79AED008C01EC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 68AF94F922B79AED008C01EC /* KinAppreciationModuleOptionsMenu */;
-			targetProxy = 68AF950522B79AED008C01EC /* PBXContainerItemProxy */;
-		};
+68AF950622B79AED008C01EC /* PBXTargetDependency */ = {
+isa = PBXTargetDependency;
+target = 68AF94F922B79AED008C01EC /* KinAppreciationModuleOptionsMenu */;
+targetProxy = 68AF950522B79AED008C01EC /* PBXContainerItemProxy */;
+};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		68AF950C22B79AED008C01EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		68AF950D22B79AED008C01EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		68AF950F22B79AED008C01EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48CB93AFE6AAAE78B0CCDC6 /* Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = QUCAP2TH46;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = KinAppreciationModuleOptionsMenu/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.kin.echosystem.sampleapp;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		68AF951022B79AED008C01EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BE7336BA60F7CD5C68A20F9 /* Pods-KinAppreciationModuleOptionsMenu.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = QUCAP2TH46;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = KinAppreciationModuleOptionsMenu/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.kin.echosystem.sampleapp;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		68AF951222B79AED008C01EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A90338FEC82AF48159966BC /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QUCAP2TH46;
-				INFOPLIST_FILE = KinAppreciationModuleOptionsMenuTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kinfoundation.KinAppreciationModuleOptionsMenuTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		68AF951322B79AED008C01EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D39399D1B0ADB88CA7D9B320 /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QUCAP2TH46;
-				INFOPLIST_FILE = KinAppreciationModuleOptionsMenuTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kinfoundation.KinAppreciationModuleOptionsMenuTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
+68AF950C22B79AED008C01EC /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+CLANG_ANALYZER_NONNULL = YES;
+CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+CLANG_CXX_LIBRARY = "libc++";
+CLANG_ENABLE_MODULES = YES;
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_ENABLE_OBJC_WEAK = YES;
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+CLANG_WARN_BOOL_CONVERSION = YES;
+CLANG_WARN_COMMA = YES;
+CLANG_WARN_CONSTANT_CONVERSION = YES;
+CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+CLANG_WARN_EMPTY_BODY = YES;
+CLANG_WARN_ENUM_CONVERSION = YES;
+CLANG_WARN_INFINITE_RECURSION = YES;
+CLANG_WARN_INT_CONVERSION = YES;
+CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+CLANG_WARN_STRICT_PROTOTYPES = YES;
+CLANG_WARN_SUSPICIOUS_MOVE = YES;
+CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+CLANG_WARN_UNREACHABLE_CODE = YES;
+CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+CODE_SIGN_IDENTITY = "iPhone Developer";
+COPY_PHASE_STRIP = NO;
+CURRENT_PROJECT_VERSION = 1;
+DEBUG_INFORMATION_FORMAT = dwarf;
+ENABLE_STRICT_OBJC_MSGSEND = YES;
+ENABLE_TESTABILITY = YES;
+GCC_C_LANGUAGE_STANDARD = gnu11;
+GCC_DYNAMIC_NO_PIC = NO;
+GCC_NO_COMMON_BLOCKS = YES;
+GCC_OPTIMIZATION_LEVEL = 0;
+GCC_PREPROCESSOR_DEFINITIONS = (
+"DEBUG=1",
+"$(inherited)",
+);
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+GCC_WARN_UNDECLARED_SELECTOR = YES;
+GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+GCC_WARN_UNUSED_FUNCTION = YES;
+GCC_WARN_UNUSED_VARIABLE = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+MTL_FAST_MATH = YES;
+ONLY_ACTIVE_ARCH = YES;
+SDKROOT = iphoneos;
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+SWIFT_VERSION = 5.0;
+VERSIONING_SYSTEM = "apple-generic";
+VERSION_INFO_PREFIX = "";
+};
+name = Debug;
+};
+68AF950D22B79AED008C01EC /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+CLANG_ANALYZER_NONNULL = YES;
+CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+CLANG_CXX_LIBRARY = "libc++";
+CLANG_ENABLE_MODULES = YES;
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_ENABLE_OBJC_WEAK = YES;
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+CLANG_WARN_BOOL_CONVERSION = YES;
+CLANG_WARN_COMMA = YES;
+CLANG_WARN_CONSTANT_CONVERSION = YES;
+CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+CLANG_WARN_EMPTY_BODY = YES;
+CLANG_WARN_ENUM_CONVERSION = YES;
+CLANG_WARN_INFINITE_RECURSION = YES;
+CLANG_WARN_INT_CONVERSION = YES;
+CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+CLANG_WARN_STRICT_PROTOTYPES = YES;
+CLANG_WARN_SUSPICIOUS_MOVE = YES;
+CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+CLANG_WARN_UNREACHABLE_CODE = YES;
+CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+CODE_SIGN_IDENTITY = "iPhone Developer";
+COPY_PHASE_STRIP = NO;
+CURRENT_PROJECT_VERSION = 1;
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+ENABLE_NS_ASSERTIONS = NO;
+ENABLE_STRICT_OBJC_MSGSEND = YES;
+GCC_C_LANGUAGE_STANDARD = gnu11;
+GCC_NO_COMMON_BLOCKS = YES;
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+GCC_WARN_UNDECLARED_SELECTOR = YES;
+GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+GCC_WARN_UNUSED_FUNCTION = YES;
+GCC_WARN_UNUSED_VARIABLE = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+MTL_ENABLE_DEBUG_INFO = NO;
+MTL_FAST_MATH = YES;
+SDKROOT = iphoneos;
+SWIFT_COMPILATION_MODE = wholemodule;
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+SWIFT_VERSION = 5.0;
+VALIDATE_PRODUCT = YES;
+VERSIONING_SYSTEM = "apple-generic";
+VERSION_INFO_PREFIX = "";
+};
+name = Release;
+};
+68AF950F22B79AED008C01EC /* Debug */ = {
+isa = XCBuildConfiguration;
+baseConfigurationReference = F48CB93AFE6AAAE78B0CCDC6 /* Pods-KinAppreciationModuleOptionsMenu.debug.xcconfig */;
+buildSettings = {
+CLANG_ENABLE_MODULES = YES;
+CODE_SIGN_IDENTITY = "iPhone Developer";
+CODE_SIGN_STYLE = Automatic;
+DEFINES_MODULE = YES;
+DEVELOPMENT_TEAM = "";
+DYLIB_COMPATIBILITY_VERSION = 1;
+DYLIB_CURRENT_VERSION = 1;
+DYLIB_INSTALL_NAME_BASE = "@rpath";
+INFOPLIST_FILE = KinAppreciationModuleOptionsMenu/Info.plist;
+INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+LD_RUNPATH_SEARCH_PATHS = (
+"$(inherited)",
+"@executable_path/Frameworks",
+"@loader_path/Frameworks",
+);
+PRODUCT_BUNDLE_IDENTIFIER = com.kinfoundation.KinAppreciationModuleOptionsMenu;
+PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+SKIP_INSTALL = YES;
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Debug;
+};
+68AF951022B79AED008C01EC /* Release */ = {
+isa = XCBuildConfiguration;
+baseConfigurationReference = 0BE7336BA60F7CD5C68A20F9 /* Pods-KinAppreciationModuleOptionsMenu.release.xcconfig */;
+buildSettings = {
+CLANG_ENABLE_MODULES = YES;
+CODE_SIGN_IDENTITY = "";
+CODE_SIGN_STYLE = Automatic;
+DEFINES_MODULE = YES;
+DEVELOPMENT_TEAM = "";
+DYLIB_COMPATIBILITY_VERSION = 1;
+DYLIB_CURRENT_VERSION = 1;
+DYLIB_INSTALL_NAME_BASE = "@rpath";
+INFOPLIST_FILE = KinAppreciationModuleOptionsMenu/Info.plist;
+INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+LD_RUNPATH_SEARCH_PATHS = (
+"$(inherited)",
+"@executable_path/Frameworks",
+"@loader_path/Frameworks",
+);
+PRODUCT_BUNDLE_IDENTIFIER = com.kinfoundation.KinAppreciationModuleOptionsMenu;
+PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+SKIP_INSTALL = YES;
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Release;
+};
+68AF951222B79AED008C01EC /* Debug */ = {
+isa = XCBuildConfiguration;
+baseConfigurationReference = 4A90338FEC82AF48159966BC /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.debug.xcconfig */;
+buildSettings = {
+CODE_SIGN_STYLE = Automatic;
+INFOPLIST_FILE = KinAppreciationModuleOptionsMenuTests/Info.plist;
+LD_RUNPATH_SEARCH_PATHS = (
+"$(inherited)",
+"@executable_path/Frameworks",
+"@loader_path/Frameworks",
+);
+PRODUCT_BUNDLE_IDENTIFIER = com.kinfoundation.KinAppreciationModuleOptionsMenuTests;
+PRODUCT_NAME = "$(TARGET_NAME)";
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Debug;
+};
+68AF951322B79AED008C01EC /* Release */ = {
+isa = XCBuildConfiguration;
+baseConfigurationReference = D39399D1B0ADB88CA7D9B320 /* Pods-KinAppreciationModuleOptionsMenu-KinAppreciationModuleOptionsMenuTests.release.xcconfig */;
+buildSettings = {
+CODE_SIGN_STYLE = Automatic;
+INFOPLIST_FILE = KinAppreciationModuleOptionsMenuTests/Info.plist;
+LD_RUNPATH_SEARCH_PATHS = (
+"$(inherited)",
+"@executable_path/Frameworks",
+"@loader_path/Frameworks",
+);
+PRODUCT_BUNDLE_IDENTIFIER = com.kinfoundation.KinAppreciationModuleOptionsMenuTests;
+PRODUCT_NAME = "$(TARGET_NAME)";
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Release;
+};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		68AF94F422B79AED008C01EC /* Build configuration list for PBXProject "KinAppreciationModuleOptionsMenu" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				68AF950C22B79AED008C01EC /* Debug */,
-				68AF950D22B79AED008C01EC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		68AF950E22B79AED008C01EC /* Build configuration list for PBXNativeTarget "KinAppreciationModuleOptionsMenu" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				68AF950F22B79AED008C01EC /* Debug */,
-				68AF951022B79AED008C01EC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		68AF951122B79AED008C01EC /* Build configuration list for PBXNativeTarget "KinAppreciationModuleOptionsMenuTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				68AF951222B79AED008C01EC /* Debug */,
-				68AF951322B79AED008C01EC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+68AF94F422B79AED008C01EC /* Build configuration list for PBXProject "KinAppreciationModuleOptionsMenu" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+68AF950C22B79AED008C01EC /* Debug */,
+68AF950D22B79AED008C01EC /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+68AF950E22B79AED008C01EC /* Build configuration list for PBXNativeTarget "KinAppreciationModuleOptionsMenu" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+68AF950F22B79AED008C01EC /* Debug */,
+68AF951022B79AED008C01EC /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+68AF951122B79AED008C01EC /* Build configuration list for PBXNativeTarget "KinAppreciationModuleOptionsMenuTests" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+68AF951222B79AED008C01EC /* Debug */,
+68AF951322B79AED008C01EC /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
 /* End XCConfigurationList section */
-	};
-	rootObject = 68AF94F122B79AED008C01EC /* Project object */;
+};
+rootObject = 68AF94F122B79AED008C01EC /* Project object */;
 }

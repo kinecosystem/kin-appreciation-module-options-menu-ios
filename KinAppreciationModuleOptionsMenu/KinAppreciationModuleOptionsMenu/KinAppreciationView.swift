@@ -32,17 +32,16 @@ class KinAppreciationView: UIView {
         stackView.distribution = .fillEqually
         addSubview(stackView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        // stackView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor,constant: -20).isActive = true
         stackView.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor).isActive = true
         
-        // amountButton.titleLabel?.font = .sailecFont(ofSize: 16, weight: .medium)
+        amountButton.titleLabel?.font = .sailecFont(ofSize: 16, weight: .medium)
         amountButton.isUserInteractionEnabled = false
         stackView.addArrangedSubview(amountButton)
         
         titleButton.setTitle("title".localized(), for: .normal)
-        //titleButtostan.titleLabel?.font = .sailecFont(ofSize: 20, weight: .medium)
+        titleButtostan.titleLabel?.font = .sailecFont(ofSize: 20, weight: .medium)
         titleButton.contentEdgeInsets = UIEdgeInsets(top: 4, left: 0, bottom: 10, right: 0)
         titleButton.isUserInteractionEnabled = false
         stackView.addArrangedSubview(titleButton)
@@ -132,11 +131,11 @@ extension KinAppreciationView: ThemeProtocol {
         switch theme {
         case .light:
             backgroundColor = .white
-            // titleButton.setTitleColor(.gray31, for: .normal)
+            titleButton.setTitleColor(.gray31, for: .normal)
             
         case .dark:
             backgroundColor = .gray31
-            // titleButton.setTitleColor(.white, for: .normal)
+            titleButton.setTitleColor(.white, for: .normal)
         }
         
         amountButton.setTitleColor(.kinPurple, for: .normal)
