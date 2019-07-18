@@ -60,12 +60,12 @@ class KinButton: UIControl {
 
         amountButton.titleLabel?.font = .sailecFont(ofSize: 20, weight: .medium)
         amountButton.isUserInteractionEnabled = false
-        amountButton.contentEdgeInsets = UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0)
+        amountButton.contentEdgeInsets = UIEdgeInsets(top: 5, left: 10, bottom: 0, right: 10)
         addSubview(amountButton)
         amountButton.translatesAutoresizingMaskIntoConstraints = false
         amountButton.topAnchor.constraint(equalTo: topAnchor).isActive = true
         amountButton.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        amountButton.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor).isActive = true
+        amountButton.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
 
         fillContainerView.clipsToBounds = true
         fillContainerView.isUserInteractionEnabled = false

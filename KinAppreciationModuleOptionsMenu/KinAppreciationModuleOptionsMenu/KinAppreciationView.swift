@@ -29,10 +29,7 @@ class KinAppreciationView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        var layoutMargins = self.layoutMargins
-        layoutMargins.top = 20
-        layoutMargins.bottom = layoutMargins.top
-        self.layoutMargins = layoutMargins
+        setLayoutMargins()
 
         stackView.axis = .vertical
         stackView.spacing = 24
@@ -108,13 +105,16 @@ class KinAppreciationView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
 
+        var verticalInset = Int(layoutMargins.top) > 0 ? layoutMargins.top : layoutMargins.left
+
         var contentEdgeInsets = closeButton.contentEdgeInsets
-        contentEdgeInsets.top = layoutMargins.top
+        contentEdgeInsets.top = verticalInset
         contentEdgeInsets.left = layoutMargins.left
         contentEdgeInsets.bottom = contentEdgeInsets.top
         contentEdgeInsets.right = contentEdgeInsets.left
         closeButton.contentEdgeInsets = contentEdgeInsets
 
+        setLayoutMargins()
 
         if Int(k1Button.amountButtonWidth.constant) == 0 {
             let kButtons = [k1Button, k5Button, k10Button, k20Button]
@@ -127,6 +127,13 @@ class KinAppreciationView: UIView {
                 }
             })
         }
+    }
+
+    private func setLayoutMargins() {
+        var layoutMargins = self.layoutMargins
+        layoutMargins.top = 20
+        layoutMargins.bottom = layoutMargins.top
+        self.layoutMargins = layoutMargins
     }
 }
 
