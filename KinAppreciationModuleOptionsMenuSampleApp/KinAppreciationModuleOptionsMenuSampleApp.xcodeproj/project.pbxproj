@@ -363,13 +363,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F879J8YSJ9;
+				DEVELOPMENT_TEAM = QUCAP2TH46;
 				INFOPLIST_FILE = KinAppreciationModuleOptionsMenuSampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kinfoundation.KinAppreciationModuleOptionsMenuSampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.kin.appreciation-module";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,13 +382,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F879J8YSJ9;
+				DEVELOPMENT_TEAM = QUCAP2TH46;
 				INFOPLIST_FILE = KinAppreciationModuleOptionsMenuSampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kinfoundation.KinAppreciationModuleOptionsMenuSampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.kin.appreciation-module";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
