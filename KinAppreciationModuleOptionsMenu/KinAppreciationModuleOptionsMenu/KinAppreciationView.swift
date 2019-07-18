@@ -24,9 +24,10 @@ class KinAppreciationView: UIView {
     let k20Button = KinButton()
     
     // MARK: Lifecycle
+
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+
         stackView.axis = .vertical
         stackView.spacing = 20
         stackView.distribution = .fillEqually
@@ -35,47 +36,50 @@ class KinAppreciationView: UIView {
         stackView.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor).isActive = true
-        
+
         amountButton.titleLabel?.font = .sailecFont(ofSize: 16, weight: .medium)
         amountButton.isUserInteractionEnabled = false
         stackView.addArrangedSubview(amountButton)
-        
+
         titleButton.setTitle("title".localized(), for: .normal)
-        titleButtostan.titleLabel?.font = .sailecFont(ofSize: 20, weight: .medium)
+        titleButton.titleLabel?.font = .sailecFont(ofSize: 20, weight: .medium)
         titleButton.contentEdgeInsets = UIEdgeInsets(top: 4, left: 0, bottom: 10, right: 0)
         titleButton.isUserInteractionEnabled = false
         stackView.addArrangedSubview(titleButton)
-        
+
         k1Button.setTitle("button.k1".localized(), for: .normal)
         k1Button.kin = 1
         k1Button.isExclusiveTouch = true
         stackView.addArrangedSubview(k1Button)
-        
+
         k5Button.setTitle("button.k5".localized(), for: .normal)
         k5Button.kin = 5
         k5Button.isExclusiveTouch = true
         stackView.addArrangedSubview(k5Button)
-        
+
         k10Button.setTitle("button.k10".localized(), for: .normal)
         k10Button.kin = 10
         k10Button.isExclusiveTouch = true
         stackView.addArrangedSubview(k10Button)
-        
+
         k20Button.setTitle("button.k20".localized(), for: .normal)
         k20Button.kin = 20
         k20Button.isExclusiveTouch = true
         stackView.addArrangedSubview(k20Button)
-        
+
         closeButton.setImage(UIImage(named: "X", in: .appreciation, compatibleWith: nil), for: .normal)
         addSubview(closeButton)
         closeButton.translatesAutoresizingMaskIntoConstraints = false
         closeButton.topAnchor.constraint(equalTo: topAnchor).isActive = true
         closeButton.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
     }
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
     // MARK: Layout
+
     override var intrinsicContentSize: CGSize {
         var size = super.intrinsicContentSize
         
@@ -97,6 +101,7 @@ class KinAppreciationView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
         var layoutMargins = self.layoutMargins
         layoutMargins.top = 20
         layoutMargins.bottom = layoutMargins.top
@@ -108,8 +113,7 @@ class KinAppreciationView: UIView {
         contentEdgeInsets.bottom = contentEdgeInsets.top
         contentEdgeInsets.right = contentEdgeInsets.left
         closeButton.contentEdgeInsets = contentEdgeInsets
-        
-        
+
         if Int(k1Button.amountButtonWidth.constant) == 0 {
             let kButtons = [k1Button, k5Button, k10Button, k20Button]
             let maxWidth = kButtons.map({ $0.amountButton.bounds.width }).max()
