@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
 
   root = 'KinAppreciationModuleOptionsMenu/KinAppreciationModuleOptionsMenu'
 
-  s.source_files = root+'/**/*.{strings,swift}'
-  s.resources    = root+'/**/*.{otf,xcassets}'
+  s.source_files = root+'/**/*.{swift}'
+  s.resources    = root+'/**/*.{otf,xcassets,strings}'
 
   s.test_spec 'Tests' do |ts|
     ts.source_files = root+'Tests/*.swift'
