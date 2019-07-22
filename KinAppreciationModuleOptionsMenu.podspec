@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              = 'KinAppreciationModuleOptionsMenu'
-  s.version           = '0.0.3'
+  s.version           = '0.0.4'
   s.license           = { :type => 'Kin Ecosystem SDK License', :file => 'LICENSE.md' }
   s.author            = { 'Kin Foundation' => 'info@kin.org' }
   s.summary           = 'Appreciation module pod for the Kin SDK.'
